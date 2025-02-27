@@ -293,11 +293,9 @@ class SlackNotifier {
 
             JSONArray attachments = new JSONArray();
             JSONObject attachment = new JSONObject();
-            // 제목과 링크: 제목 클릭 시 해당 기사로 이동
             attachment.put("title", title);
             attachment.put("title_link", articleLink);
             
-            // 이미지 URL 추가 (있으면)
             if (!imagePublicUrl.isEmpty()) {
                 attachment.put("image_url", imagePublicUrl);
             }
@@ -317,6 +315,7 @@ class SlackNotifier {
         }
     }
 }
+
 
 // 메인 뉴스 서비스 클래스
 class NewsService {
@@ -391,47 +390,37 @@ class NewsService {
         return newsItems;
     }
     
-    // 뉴스 아이템 리스트를 처리하는 메서드
     private void processNewsItems(List<NewsItem> newsItems, Set<String> sentArticles) {
         try {
-            // 필터링된 뉴스 아이템과 이미지 매핑 저장
             List<NewsItem> filteredItems = new ArrayList<>();
             Map<String, String> newsImages = new HashMap<>();
-            
+    
             for (NewsItem newsItem : newsItems) {
-                // 중복 전송 방지를 위해 이미 전송된 기사라면 건너뛰기
                 if (sentArticles.contains(newsItem.getLink())) {
                     logger.info("이미 전송된 기사라 건너뜁니다: " + newsItem.getTitle());
                     continue;
                 }
-                
-                // 이미지 검색 및 다운로드
+    
                 String imageFileName = imageService.getImageForNews(newsItem.getTitle());
                 if (!imageFileName.isEmpty()) {
                     newsImages.put(newsItem.getTitle(), imageFileName);
                 }
-                
+    
                 filteredItems.add(newsItem);
-                
-                // Slack 메시지 전송
+    
                 String imagePublicUrl = "";
-                if (!imageFileName.isEmpty()) {
-                    String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
-                    if (baseUrl != null && !baseUrl.isEmpty()) {
-                        imagePublicUrl = baseUrl + imageFileName;
-                    }
+                String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
+                if (baseUrl != null && !baseUrl.isEmpty() && !imageFileName.isEmpty()) {
+                    imagePublicUrl = baseUrl + imageFileName;
                 }
-                slackNotifier.sendSlackMessage(newsItem.getTitle(), newsItem.getLink(), 
-                                              newsItem.getDescription(), imagePublicUrl);
+    
+                slackNotifier.sendSlackMessage(newsItem.getTitle(), newsItem.getLink(), imagePublicUrl);
                 
-                // 전송한 기사 링크 기록 (중복 전송 방지)
                 repository.markArticleAsSent(newsItem.getLink());
                 logger.info("뉴스 제목 처리됨 및 Slack 전송: " + newsItem.getTitle());
             }
-            
-            // 필터링된 기사를 파일에 저장
+    
             repository.saveNewsToFiles(filteredItems, newsImages);
-            
         } catch (Exception e) {
             logger.severe("뉴스 처리 중 오류 발생: " + e.getMessage());
             e.printStackTrace();
