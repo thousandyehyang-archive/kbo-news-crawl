@@ -2,7 +2,7 @@ name: Crawl KBO News
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # 매일 한국 시간 오후 9시 (UTC 13시)
+    - cron: '0 0 * * *'  # 매일 한국 시간 오전 9시
   workflow_dispatch:     # 수동 실행 가능
 
 jobs:
