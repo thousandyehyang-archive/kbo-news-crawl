@@ -73,11 +73,14 @@ class Monitoring {
                     mdWriter.write("| Timestamp           | Title                             | Image                                     |\n");
                     mdWriter.write("|---------------------|-----------------------------------|-------------------------------------------|\n");
                 }
+                
                 String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
                 for (int i = 0; i < items.length(); i++) {
                     JSONObject item = items.getJSONObject(i);
                     String title = item.getString("title").replaceAll("<.*?>", "");
-                    
+                    // 기사 링크 추출
+                    String articleLink = item.getString("link");
+                
                     // 각 뉴스 항목마다 해당 뉴스 제목을 기반으로 이미지 검색 및 다운로드
                     String imageFileName = getImageForNews(title);
                     
@@ -88,9 +91,20 @@ class Monitoring {
                     String imageMarkdown = imageFileName.isEmpty() ? "" : String.format("![Image](images/%s)", imageFileName);
                     mdWriter.write(String.format("| %s | %s | %s |\n", timestamp, title, imageMarkdown));
                     
-                    logger.info("뉴스 제목: " + title);
+                    // Slack 메시지 전송
+                    String imagePublicUrl = "";
+                    if (!imageFileName.isEmpty()) {
+                        String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
+                        if (baseUrl != null && !baseUrl.isEmpty()) {
+                            imagePublicUrl = baseUrl + imageFileName;
+                        }
+                    }
+                    sendSlackMessage(title, articleLink, imagePublicUrl);
+                    
+                    logger.info("뉴스 제목 처리됨: " + title);
                 }
             }
+            
             logger.info("뉴스 데이터가 CSV 및 Markdown 파일에 저장되었습니다.");
         } catch (Exception e) {
             logger.severe("오류 발생: " + e.getMessage());
