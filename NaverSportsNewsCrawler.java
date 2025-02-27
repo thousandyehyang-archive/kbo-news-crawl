@@ -6,6 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.file.Path;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -45,7 +46,7 @@ class Monitoring {
         client = HttpClient.newHttpClient();
     }
 
-    // 뉴스와 이미지 데이터를 API를 통해 가져와 파일로 저장
+    // 뉴스와 이미지 데이터를 API를 통해 가져와 CSV 파일에 저장
     public void getNews(String keyword, int display, int start, SortType sort) {
         try {
             // 1. 뉴스 데이터 조회
@@ -53,19 +54,8 @@ class Monitoring {
             JSONObject newsJson = new JSONObject(newsResponse);
             JSONArray items = newsJson.getJSONArray("items");
 
-            // 뉴스 제목 저장 (HTML 태그 제거)
-            String newsFileName = String.format("%d_%s_news.txt", new Date().getTime(), keyword);
-            try (FileWriter writer = new FileWriter(new File(newsFileName))) {
-                for (int i = 0; i < items.length(); i++) {
-                    JSONObject item = items.getJSONObject(i);
-                    String title = item.getString("title").replaceAll("<.*?>", "");
-                    writer.write(title + "\n");
-                    logger.info("뉴스 제목: " + title);
-                }
-            }
-            logger.info("뉴스 목록이 " + newsFileName + " 파일에 저장되었습니다.");
-
             // 2. 이미지 데이터 조회 (관련성 높은 결과: sort=sim)
+            String imageFileName = "";
             String imageResponse = getDataFromAPI("image", keyword, display, start, SortType.sim);
             JSONObject imageJson = new JSONObject(imageResponse);
             JSONArray imageItems = imageJson.getJSONArray("items");
@@ -79,13 +69,33 @@ class Monitoring {
                         .build();
                 String[] parts = imageLink.split("\\.");
                 String ext = parts[parts.length - 1];
-                String imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), keyword, ext);
+                imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), keyword, ext);
                 Path imagePath = Path.of(imageFileName);
                 client.send(imageRequest, HttpResponse.BodyHandlers.ofFile(imagePath));
                 logger.info("이미지가 " + imageFileName + " 파일로 저장되었습니다.");
             } else {
                 logger.warning("이미지 결과가 없습니다.");
             }
+
+            // 3. CSV 파일에 뉴스 제목과 이미지 파일명을 기록 (파일이 없으면 헤더 추가)
+            String csvFileName = "baseball_news.csv";
+            File csvFile = new File(csvFileName);
+            boolean fileExists = csvFile.exists();
+            try (FileWriter csvWriter = new FileWriter(csvFile, true)) {
+                if (!fileExists) {
+                    csvWriter.write("timestamp,title,image\n");
+                }
+                String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+                for (int i = 0; i < items.length(); i++) {
+                    JSONObject item = items.getJSONObject(i);
+                    String title = item.getString("title").replaceAll("<.*?>", "");
+                    // CSV 형식 유지를 위해 큰따옴표로 감싸고 내부 큰따옴표 이스케이프 처리
+                    title = title.replace("\"", "\"\"");
+                    csvWriter.write(String.format("%s,\"%s\",%s\n", timestamp, title, imageFileName));
+                    logger.info("뉴스 제목: " + title);
+                }
+            }
+            logger.info("뉴스 데이터가 " + csvFileName + " 파일에 저장되었습니다.");
         } catch (Exception e) {
             logger.severe("오류 발생: " + e.getMessage());
             e.printStackTrace();
