@@ -139,6 +139,45 @@ class Monitoring {
         return "";
     }
 
+    private void sendSlackMessage(String title, String articleLink, String imagePublicUrl) {
+    try {
+        String slackWebhookUrl = System.getenv("SLACK_WEBHOOK_URL");
+        if (slackWebhookUrl == null || slackWebhookUrl.isEmpty()) {
+            logger.warning("SLACK_WEBHOOK_URL 환경변수가 설정되지 않음.");
+            return;
+        }
+        
+        // Slack 메시지 페이로드 구성
+        JSONObject payload = new JSONObject();
+        payload.put("text", "새 뉴스 기사가 도착했습니다!");
+        
+        JSONArray attachments = new JSONArray();
+        JSONObject attachment = new JSONObject();
+        // 제목과 함께 제목 링크를 설정하면 제목이 하이퍼링크로 표시됨
+        attachment.put("title", title);
+        attachment.put("title_link", articleLink);
+        
+        // 이미지 URL이 존재하면 추가
+        if (!imagePublicUrl.isEmpty()) {
+            attachment.put("image_url", imagePublicUrl);
+        }
+        attachments.put(attachment);
+        payload.put("attachments", attachments);
+        
+        HttpRequest slackRequest = HttpRequest.newBuilder()
+                .uri(URI.create(slackWebhookUrl))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(payload.toString()))
+                .build();
+        
+        HttpResponse<String> slackResponse = client.send(slackRequest, HttpResponse.BodyHandlers.ofString());
+        logger.info("Slack 전송 응답: " + slackResponse.body());
+    } catch(Exception e) {
+        logger.warning("Slack 전송 실패: " + e.getMessage());
+    }
+}
+
+
     // 네이버 API 호출 메서드
     private String getDataFromAPI(String path, String query, int display, int start, SortType sort) throws Exception {
         String url = "https://openapi.naver.com/v1/search/%s".formatted(path);
