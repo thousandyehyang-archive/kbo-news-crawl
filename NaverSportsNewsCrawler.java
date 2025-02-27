@@ -63,20 +63,22 @@ class Monitoring {
                 JSONObject firstImage = imageItems.getJSONObject(0);
                 String imageLink = firstImage.getString("link").split("\\?")[0]; // 쿼리 파라미터 제거
                 logger.info("이미지 링크: " + imageLink);
-    
+            
                 HttpRequest imageRequest = HttpRequest.newBuilder()
                         .uri(URI.create(imageLink))
                         .build();
                 String[] parts = imageLink.split("\\.");
                 String ext = parts[parts.length - 1];
-                imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), keyword, ext);
+                // KEYWORD 내 쉼표를 언더바로 치환하여 안전한 파일명 생성
+                String sanitizedKeyword = keyword.replace(",", "_");
+                imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), sanitizedKeyword, ext);
                 Path imagePath = Path.of(imageFileName);
                 client.send(imageRequest, HttpResponse.BodyHandlers.ofFile(imagePath));
                 logger.info("이미지가 " + imageFileName + " 파일로 저장되었습니다.");
             } else {
                 logger.warning("이미지 결과가 없습니다.");
             }
-    
+            
             // 3. CSV 파일에 뉴스 제목과 이미지 파일명을 기록 (파일이 없으면 헤더 추가)
             String csvFileName = "baseball_news.csv";
             File csvFile = new File(csvFileName);
