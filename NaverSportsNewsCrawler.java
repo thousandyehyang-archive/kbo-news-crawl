@@ -376,7 +376,7 @@ class NewsService {
         // 날짜 필터링을 위한 현재 시간 설정
         SimpleDateFormat sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_YEAR, -1); // 최근 1일 이내 뉴스만 가져오기
+        calendar.add(Calendar.DAY_OF_YEAR, -3); // 최근 3일 이내 뉴스만 가져오기
     
         for (int i = 0; i < items.length(); i++) {
             JSONObject item = items.getJSONObject(i);
