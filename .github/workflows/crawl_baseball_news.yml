@@ -1,9 +1,9 @@
-name: Crawl Baseball News
+name: Crawl Domestic Baseball News
 
 on:
   schedule:
-    - cron: '0 3 * * *' # 매일 한국 시간 오전 12시 실행 (UTC 3시)
-  workflow_dispatch: # 수동 실행 가능
+    - cron: '0 3 * * *'  # 매일 한국 시간 오전 12시 (UTC 3시)
+  workflow_dispatch:     # 수동 실행 가능
 
 jobs:
   crawl_news:
@@ -19,30 +19,21 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y curl
+      - name: Install curl
+        run: sudo apt update && sudo apt install -y curl
 
-      - name: Download Jsoup Library
+      - name: Download org.json Library
         run: |
-          curl -L -o jsoup.jar https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar
+          curl -L -o json.jar https://repo1.maven.org/maven2/org/json/json/20230227/json-20230227.jar
 
-      - name: Compile Java with Jsoup
+      - name: Compile Java Code
         run: |
-          javac -cp .:jsoup.jar -d . NaverSportsCrawler.java
+          javac -cp .:json.jar -d . NaverSportsNewsCrawler.java
 
-      - name: Run Baseball News Crawler
-        run: |
-          java -cp .:jsoup.jar:. NaverSportsCrawler
-          rm -f jsoup.jar  # 실행 후 jsoup.jar 삭제
-
-      - name: Commit and push results
+      - name: Run Naver Sports News Crawler
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          KEYWORD: ${{ secrets.KEYWORD }}  # 또는 기본값("국내 야구 스포츠") 사용 가능
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A  # 변경된 모든 파일 추가
-          git commit -m "자동 크롤링: $(date +'%Y-%m-%d')" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main || echo "No changes to push"
+          java -cp .:json.jar NaverSportsNewsCrawler
