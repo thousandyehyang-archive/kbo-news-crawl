@@ -33,7 +33,7 @@ public class NaverSportsNewsCrawler {
         
         // 뉴스 서비스 생성 및 실행
         NewsService newsService = new NewsService(apiClient, repository, imageService, slackNotifier, logger);
-        newsService.getAndProcessNews(keyword, 10);
+        newsService.getAndProcessNews(keyword, 1);
     }
 }
 
