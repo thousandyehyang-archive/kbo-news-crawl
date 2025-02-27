@@ -53,7 +53,7 @@ class Monitoring {
             String newsResponse = getDataFromAPI("news.json", keyword, display, start, sort);
             JSONObject newsJson = new JSONObject(newsResponse);
             JSONArray items = newsJson.getJSONArray("items");
-
+    
             // 2. 이미지 데이터 조회 (관련성 높은 결과: sort=sim)
             String imageFileName = "";
             String imageResponse = getDataFromAPI("image", keyword, display, start, SortType.sim);
@@ -63,7 +63,7 @@ class Monitoring {
                 JSONObject firstImage = imageItems.getJSONObject(0);
                 String imageLink = firstImage.getString("link").split("\\?")[0]; // 쿼리 파라미터 제거
                 logger.info("이미지 링크: " + imageLink);
-
+    
                 HttpRequest imageRequest = HttpRequest.newBuilder()
                         .uri(URI.create(imageLink))
                         .build();
@@ -76,7 +76,7 @@ class Monitoring {
             } else {
                 logger.warning("이미지 결과가 없습니다.");
             }
-
+    
             // 3. CSV 파일에 뉴스 제목과 이미지 파일명을 기록 (파일이 없으면 헤더 추가)
             String csvFileName = "baseball_news.csv";
             File csvFile = new File(csvFileName);
@@ -96,11 +96,32 @@ class Monitoring {
                 }
             }
             logger.info("뉴스 데이터가 " + csvFileName + " 파일에 저장되었습니다.");
+    
+            // 4. Markdown 파일에 뉴스 데이터 기록 (표 형식, 이미지 렌더링 지원)
+            String mdFileName = "baseball_news.md";
+            File mdFile = new File(mdFileName);
+            boolean mdFileExists = mdFile.exists();
+            try (FileWriter mdWriter = new FileWriter(mdFile, true)) {
+                if (!mdFileExists) {
+                    // Markdown 테이블 헤더 작성
+                    mdWriter.write("| Timestamp           | Title                             | Image                                     |\n");
+                    mdWriter.write("|---------------------|-----------------------------------|-------------------------------------------|\n");
+                }
+                String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+                for (int i = 0; i < items.length(); i++) {
+                    JSONObject item = items.getJSONObject(i);
+                    String title = item.getString("title").replaceAll("<.*?>", "").replace("\"", "\"\"");
+                    // Markdown 이미지 렌더링: ![대체텍스트](파일경로)
+                    mdWriter.write(String.format("| %s | %s | ![Image](%s) |\n", timestamp, title, imageFileName));
+                }
+            }
+            logger.info("Markdown 파일에 뉴스 데이터가 저장되었습니다.");
         } catch (Exception e) {
             logger.severe("오류 발생: " + e.getMessage());
             e.printStackTrace();
         }
     }
+
 
     // 네이버 API 호출 메서드
     private String getDataFromAPI(String path, String keyword, int display, int start, SortType sort) throws Exception {
