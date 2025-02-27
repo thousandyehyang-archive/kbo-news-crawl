@@ -37,3 +37,14 @@ jobs:
           KEYWORD: ${{ secrets.KEYWORD }}  # 또는 기본값("국내 야구 스포츠") 사용 가능
         run: |
           java -cp .:json.jar NaverSportsNewsCrawler
+          
+      - name: Commit and push baseball_news.csv
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add baseball_news.csv
+          git commit -m "자동 크롤링: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main || echo "No changes to push"
+
