@@ -22,7 +22,7 @@ public class NaverSportsNewsCrawler {
             keyword = "국내 야구 스포츠";
         }
         Monitoring monitoring = new Monitoring();
-        monitoring.getNews(keyword, 10, 1, SortType.date);
+        monitoring.getNews(keyword, 1, 1, SortType.date);
     }
 }
 
