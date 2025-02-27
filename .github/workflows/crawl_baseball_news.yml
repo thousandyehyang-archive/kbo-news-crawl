@@ -1,4 +1,4 @@
-name: Crawl Domestic Baseball News
+name: Crawl KBO News
 
 on:
   schedule:
