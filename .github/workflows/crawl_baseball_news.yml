@@ -3,7 +3,7 @@ name: Crawl Baseball News
 on:
   schedule:
     - cron: '0 3 * * *' # 매일 한국 시간 오전 12시 실행 (UTC 3시)
-  workflow_dispatch: # 수동 실행도 가능하도록 설정
+  workflow_dispatch: # 수동 실행 가능
 
 jobs:
   crawl_news:
@@ -24,10 +24,17 @@ jobs:
           sudo apt update
           sudo apt install -y curl
 
-      - name: Run baseball news crawler
+      - name: Download Jsoup Library
         run: |
-          javac NaverSportsCrawler.java
-          java NaverSportsCrawler
+          curl -L -o jsoup.jar https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar
+
+      - name: Compile Java with Jsoup
+        run: |
+          javac -cp .:jsoup.jar NaverSportsCrawler.java
+
+      - name: Run Baseball News Crawler
+        run: |
+          java -cp .:jsoup.jar NaverSportsCrawler
 
       - name: Commit and push results
         run: |
