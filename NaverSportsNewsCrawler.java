@@ -281,7 +281,7 @@ class SlackNotifier {
         this.logger = logger;
     }
 
-    public void sendSlackMessage(String title, String articleLink, String snippet, String imagePublicUrl) {
+    public void sendSlackMessage(String title, String articleLink, String imagePublicUrl) {
         try {
             String slackWebhookUrl = System.getenv("SLACK_WEBHOOK_URL");
             if (slackWebhookUrl == null || slackWebhookUrl.isEmpty()) {
@@ -296,10 +296,7 @@ class SlackNotifier {
             // 제목과 링크: 제목 클릭 시 해당 기사로 이동
             attachment.put("title", title);
             attachment.put("title_link", articleLink);
-            // 기사 내용 일부(스니펫) 추가
-            if (!snippet.isEmpty()) {
-                attachment.put("text", snippet);
-            }
+            
             // 이미지 URL 추가 (있으면)
             if (!imagePublicUrl.isEmpty()) {
                 attachment.put("image_url", imagePublicUrl);
