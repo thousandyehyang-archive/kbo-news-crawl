@@ -46,32 +46,77 @@ class Monitoring {
         client = HttpClient.newHttpClient();
     }
 
-    // 뉴스와 이미지 데이터를 API를 통해 가져와 CSV 파일에 저장
+    // 뉴스와 이미지 데이터를 API를 통해 가져와 CSV 및 Markdown 파일에 저장
     public void getNews(String keyword, int display, int start, SortType sort) {
         try {
             // 1. 뉴스 데이터 조회
             String newsResponse = getDataFromAPI("news.json", keyword, display, start, sort);
             JSONObject newsJson = new JSONObject(newsResponse);
             JSONArray items = newsJson.getJSONArray("items");
+
+            // CSV와 Markdown 파일 준비
+            String csvFileName = "baseball_news.csv";
+            File csvFile = new File(csvFileName);
+            boolean csvExists = csvFile.exists();
+
+            String mdFileName = "baseball_news.md";
+            File mdFile = new File(mdFileName);
+            boolean mdExists = mdFile.exists();
+
+            try (FileWriter csvWriter = new FileWriter(csvFile, true);
+                 FileWriter mdWriter = new FileWriter(mdFile, true)) {
+                 
+                if (!csvExists) {
+                    csvWriter.write("timestamp,title,image\n");
+                }
+                if (!mdExists) {
+                    mdWriter.write("| Timestamp           | Title                             | Image                                     |\n");
+                    mdWriter.write("|---------------------|-----------------------------------|-------------------------------------------|\n");
+                }
+                String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+                for (int i = 0; i < items.length(); i++) {
+                    JSONObject item = items.getJSONObject(i);
+                    String title = item.getString("title").replaceAll("<.*?>", "");
+                    
+                    // 각 뉴스 항목마다 해당 뉴스 제목을 기반으로 이미지 검색 및 다운로드
+                    String imageFileName = getImageForNews(title);
+                    
+                    // CSV 기록 (이미지 파일명이 없으면 빈 문자열)
+                    csvWriter.write(String.format("%s,\"%s\",%s\n", timestamp, title, imageFileName));
+                    
+                    // Markdown 기록 (이미지 파일이 있으면 ![Image](images/파일명), 없으면 빈 칸)
+                    String imageMarkdown = imageFileName.isEmpty() ? "" : String.format("![Image](images/%s)", imageFileName);
+                    mdWriter.write(String.format("| %s | %s | %s |\n", timestamp, title, imageMarkdown));
+                    
+                    logger.info("뉴스 제목: " + title);
+                }
+            }
+            logger.info("뉴스 데이터가 CSV 및 Markdown 파일에 저장되었습니다.");
+        } catch (Exception e) {
+            logger.severe("오류 발생: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
     
-            // 2. 이미지 데이터 조회 (관련성 높은 결과: sort=sim)
-            String imageFileName = "";
-            String imageResponse = getDataFromAPI("image", keyword, display, start, SortType.sim);
+    // 각 뉴스 제목에 대해 관련 이미지를 검색하고 다운로드하는 메서드
+    private String getImageForNews(String newsTitle) {
+        try {
+            // 뉴스 제목을 쿼리로 사용하여 이미지 API 호출 (결과 1개)
+            String imageResponse = getDataFromAPI("image", newsTitle, 1, 1, SortType.sim);
             JSONObject imageJson = new JSONObject(imageResponse);
             JSONArray imageItems = imageJson.getJSONArray("items");
             if (imageItems.length() > 0) {
                 JSONObject firstImage = imageItems.getJSONObject(0);
                 String imageLink = firstImage.getString("link").split("\\?")[0]; // 쿼리 파라미터 제거
-                logger.info("이미지 링크: " + imageLink);
-    
-                HttpRequest imageRequest = HttpRequest.newBuilder()
-                        .uri(URI.create(imageLink))
-                        .build();
+                
+                // 뉴스 제목을 기반으로 안전한 파일명 생성 (특수문자 제거, 길이 제한)
+                String sanitizedTitle = newsTitle.replaceAll("[^a-zA-Z0-9가-힣]", "_");
+                if (sanitizedTitle.length() > 20) {
+                    sanitizedTitle = sanitizedTitle.substring(0, 20);
+                }
                 String[] parts = imageLink.split("\\.");
                 String ext = parts[parts.length - 1];
-                // KEYWORD 내 쉼표를 언더바로 치환하여 안전한 파일명 생성
-                String sanitizedKeyword = keyword.replace(",", "_");
-                imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), sanitizedKeyword, ext);
+                String imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), sanitizedTitle, ext);
                 
                 // images 폴더 생성 (없으면)
                 File imagesDir = new File("images");
@@ -81,64 +126,24 @@ class Monitoring {
                 
                 // 이미지 파일을 images 폴더 내에 저장
                 String imagePathString = "images/" + imageFileName;
-                Path imagePath = Path.of(imagePathString);
-                client.send(imageRequest, HttpResponse.BodyHandlers.ofFile(imagePath));
-                logger.info("이미지가 " + imagePathString + " 파일로 저장되었습니다.");
-            } else {
-                logger.warning("이미지 결과가 없습니다.");
+                HttpRequest imageRequest = HttpRequest.newBuilder()
+                        .uri(URI.create(imageLink))
+                        .build();
+                client.send(imageRequest, HttpResponse.BodyHandlers.ofFile(Path.of(imagePathString)));
+                logger.info("뉴스 이미지 저장됨: " + imagePathString);
+                return imageFileName;
             }
-    
-            // 3. CSV 파일에 뉴스 제목과 이미지 파일명을 기록 (파일이 없으면 헤더 추가)
-            String csvFileName = "baseball_news.csv";
-            File csvFile = new File(csvFileName);
-            boolean fileExists = csvFile.exists();
-            try (FileWriter csvWriter = new FileWriter(csvFile, true)) {
-                if (!fileExists) {
-                    csvWriter.write("timestamp,title,image\n");
-                }
-                String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-                for (int i = 0; i < items.length(); i++) {
-                    JSONObject item = items.getJSONObject(i);
-                    String title = item.getString("title").replaceAll("<.*?>", "");
-                    // CSV 형식 유지를 위해 큰따옴표로 감싸고 내부 큰따옴표 이스케이프 처리
-                    title = title.replace("\"", "\"\"");
-                    csvWriter.write(String.format("%s,\"%s\",%s\n", timestamp, title, imageFileName));
-                    logger.info("뉴스 제목: " + title);
-                }
-            }
-            logger.info("뉴스 데이터가 " + csvFileName + " 파일에 저장되었습니다.");
-    
-            // 4. Markdown 파일에 뉴스 데이터 기록 (표 형식, 이미지 렌더링 지원)
-            String mdFileName = "baseball_news.md";
-            File mdFile = new File(mdFileName);
-            boolean mdFileExists = mdFile.exists();
-            try (FileWriter mdWriter = new FileWriter(mdFile, true)) {
-                if (!mdFileExists) {
-                    // Markdown 테이블 헤더 작성
-                    mdWriter.write("| Timestamp           | Title                             | Image                                     |\n");
-                    mdWriter.write("|---------------------|-----------------------------------|-------------------------------------------|\n");
-                }
-                String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-                for (int i = 0; i < items.length(); i++) {
-                    JSONObject item = items.getJSONObject(i);
-                    String title = item.getString("title").replaceAll("<.*?>", "").replace("\"", "\"\"");
-                    // Markdown 이미지 렌더링: ![대체텍스트](파일경로) -> images 폴더 내 파일을 참조
-                    mdWriter.write(String.format("| %s | %s | ![Image](images/%s) |\n", timestamp, title, imageFileName));
-                }
-            }
-            logger.info("Markdown 파일에 뉴스 데이터가 저장되었습니다.");
         } catch (Exception e) {
-            logger.severe("오류 발생: " + e.getMessage());
-            e.printStackTrace();
+            logger.warning("이미지 검색 실패: " + e.getMessage());
         }
+        return "";
     }
 
-
     // 네이버 API 호출 메서드
-    private String getDataFromAPI(String path, String keyword, int display, int start, SortType sort) throws Exception {
+    private String getDataFromAPI(String path, String query, int display, int start, SortType sort) throws Exception {
         String url = "https://openapi.naver.com/v1/search/%s".formatted(path);
         String params = String.format("query=%s&display=%d&start=%d&sort=%s",
-                URLEncoder.encode(keyword, "UTF-8"), display, start, sort.value);
+                URLEncoder.encode(query, "UTF-8"), display, start, sort.value);
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url + "?" + params))
                 .GET()
