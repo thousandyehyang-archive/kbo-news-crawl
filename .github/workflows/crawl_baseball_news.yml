@@ -31,10 +31,12 @@ jobs:
       - name: Compile Java with Jsoup
         run: |
           javac -cp .:jsoup.jar NaverSportsCrawler.java
+          rm -f *.class  # 컴파일 후 .class 파일 삭제
 
       - name: Run Baseball News Crawler
         run: |
           java -cp .:jsoup.jar NaverSportsCrawler
+          rm -f jsoup.jar  # 실행 후 jsoup.jar 삭제
 
       - name: Commit and push results
         env:
