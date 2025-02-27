@@ -186,7 +186,7 @@ class Monitoring {
                 return;
             }
             JSONObject payload = new JSONObject();
-            payload.put("text", "새 뉴스 기사가 도착했습니다!");
+            payload.put("text", "✉️ 똑똑, 새 KBO 뉴스가 도착했습니다!");
 
             JSONArray attachments = new JSONArray();
             JSONObject attachment = new JSONObject();
