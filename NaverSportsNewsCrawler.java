@@ -63,7 +63,7 @@ class Monitoring {
                 JSONObject firstImage = imageItems.getJSONObject(0);
                 String imageLink = firstImage.getString("link").split("\\?")[0]; // 쿼리 파라미터 제거
                 logger.info("이미지 링크: " + imageLink);
-            
+    
                 HttpRequest imageRequest = HttpRequest.newBuilder()
                         .uri(URI.create(imageLink))
                         .build();
@@ -72,13 +72,22 @@ class Monitoring {
                 // KEYWORD 내 쉼표를 언더바로 치환하여 안전한 파일명 생성
                 String sanitizedKeyword = keyword.replace(",", "_");
                 imageFileName = String.format("%d_%s_image.%s", new Date().getTime(), sanitizedKeyword, ext);
-                Path imagePath = Path.of(imageFileName);
+                
+                // images 폴더 생성 (없으면)
+                File imagesDir = new File("images");
+                if (!imagesDir.exists()) {
+                    imagesDir.mkdir();
+                }
+                
+                // 이미지 파일을 images 폴더 내에 저장
+                String imagePathString = "images/" + imageFileName;
+                Path imagePath = Path.of(imagePathString);
                 client.send(imageRequest, HttpResponse.BodyHandlers.ofFile(imagePath));
-                logger.info("이미지가 " + imageFileName + " 파일로 저장되었습니다.");
+                logger.info("이미지가 " + imagePathString + " 파일로 저장되었습니다.");
             } else {
                 logger.warning("이미지 결과가 없습니다.");
             }
-            
+    
             // 3. CSV 파일에 뉴스 제목과 이미지 파일명을 기록 (파일이 없으면 헤더 추가)
             String csvFileName = "baseball_news.csv";
             File csvFile = new File(csvFileName);
@@ -113,8 +122,8 @@ class Monitoring {
                 for (int i = 0; i < items.length(); i++) {
                     JSONObject item = items.getJSONObject(i);
                     String title = item.getString("title").replaceAll("<.*?>", "").replace("\"", "\"\"");
-                    // Markdown 이미지 렌더링: ![대체텍스트](파일경로)
-                    mdWriter.write(String.format("| %s | %s | ![Image](%s) |\n", timestamp, title, imageFileName));
+                    // Markdown 이미지 렌더링: ![대체텍스트](파일경로) -> images 폴더 내 파일을 참조
+                    mdWriter.write(String.format("| %s | %s | ![Image](images/%s) |\n", timestamp, title, imageFileName));
                 }
             }
             logger.info("Markdown 파일에 뉴스 데이터가 저장되었습니다.");
