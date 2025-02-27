@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
@@ -23,27 +20,30 @@ public class NaverSportsNewsCrawler {
         if (keyword == null || keyword.isEmpty()) {
             keyword = "국내 야구 스포츠";
         }
-        Monitoring monitoring = new Monitoring();
-        // 최신순으로 10개, 정확도순으로 10개 기사를 가져와 중복 제거 후 처리
-        monitoring.getAndProcessNews(keyword, 10);
+
+        // 의존성 주입
+        Logger logger = Logger.getLogger(NaverSportsNewsCrawler.class.getName());
+        logger.setLevel(Level.INFO);
+        HttpClient client = HttpClient.newHttpClient();
+        
+        NaverApiClient apiClient = new NaverApiClient(client, logger);
+        NewsRepository repository = new FileNewsRepository(logger);
+        ImageService imageService = new ImageService(apiClient, logger);
+        SlackNotifier slackNotifier = new SlackNotifier(client, logger);
+        
+        // 뉴스 서비스 생성 및 실행
+        NewsService newsService = new NewsService(apiClient, repository, imageService, slackNotifier, logger);
+        newsService.getAndProcessNews(keyword, 10);
     }
 }
 
-enum SortType {
-    sim("sim"), date("date");
-
-    final String value;
-    SortType(String value) {
-        this.value = value;
-    }
-}
-
+// 뉴스 아이템 클래스
 class NewsItem implements Comparable<NewsItem> {
-    String title;
-    String link;
-    String description;
-    Date pubDate;
-    String pubDateStr;
+    private final String title;
+    private final String link;
+    private final String description;
+    private final Date pubDate;
+    private final String pubDateStr;
 
     public NewsItem(String title, String link, String description, Date pubDate, String pubDateStr) {
         this.title = title;
@@ -51,6 +51,26 @@ class NewsItem implements Comparable<NewsItem> {
         this.description = description;
         this.pubDate = pubDate;
         this.pubDateStr = pubDateStr;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Date getPubDate() {
+        return pubDate;
+    }
+
+    public String getPubDateStr() {
+        return pubDateStr;
     }
 
     @Override
@@ -73,76 +93,90 @@ class NewsItem implements Comparable<NewsItem> {
     }
 }
 
-class Monitoring {
-    private final Logger logger;
+// 정렬 타입 enum
+enum SortType {
+    sim("sim"), date("date");
+
+    final String value;
+    SortType(String value) {
+        this.value = value;
+    }
+}
+
+// 네이버 API 클라이언트
+class NaverApiClient {
     private final HttpClient client;
-    private final SimpleDateFormat inputFormat;
-    private final SimpleDateFormat outputFormat;
+    private final Logger logger;
 
-    public Monitoring() {
-        logger = Logger.getLogger(Monitoring.class.getName());
-        logger.setLevel(Level.INFO);
-        client = HttpClient.newHttpClient();
-        inputFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
-        outputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public NaverApiClient(HttpClient client, Logger logger) {
+        this.client = client;
+        this.logger = logger;
     }
 
-    // 최신순과 정확도순으로 뉴스를 가져와 중복 제거 후 처리
-    public void getAndProcessNews(String keyword, int count) {
-        try {
-            // 1. 최신순으로 검색한 결과 가져오기
-            List<NewsItem> dateResults = getNewsItems(keyword, count, 1, SortType.date);
-            
-            // 2. 정확도순으로 검색한 결과 가져오기
-            List<NewsItem> simResults = getNewsItems(keyword, count, 1, SortType.sim);
-            
-            // 3. 두 결과를 합치고 중복 제거
-            Set<NewsItem> uniqueNewsItems = new LinkedHashSet<>();
-            uniqueNewsItems.addAll(dateResults);
-            uniqueNewsItems.addAll(simResults);
-            
-            // 4. 최종 목록을 시간순으로 정렬 (최신순)
-            List<NewsItem> finalNewsList = new ArrayList<>(uniqueNewsItems);
-            Collections.sort(finalNewsList);
-            
-            // 5. 이전에 전송한 기사 링크 목록 읽어 중복 전송 방지에 사용
-            Set<String> sentArticles = readSentArticles();
-            
-            // 6. 처리
-            processNewsItems(finalNewsList, sentArticles);
-            
+    public String getDataFromAPI(String path, String query, int display, int start, SortType sort) throws Exception {
+        String url = "https://openapi.naver.com/v1/search/%s".formatted(path);
+        String params = String.format("query=%s&display=%d&start=%d&sort=%s",
+                URLEncoder.encode(query, "UTF-8"), display, start, sort.value);
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(url + "?" + params))
+                .GET()
+                .header("X-Naver-Client-Id", System.getenv("NAVER_CLIENT_ID"))
+                .header("X-Naver-Client-Secret", System.getenv("NAVER_CLIENT_SECRET"))
+                .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        logger.info("API 응답 상태 코드: " + response.statusCode());
+        if (response.statusCode() != 200) {
+            throw new Exception("API 호출 실패: " + response.body());
+        }
+        return response.body();
+    }
+}
+
+// 뉴스 저장소 인터페이스
+interface NewsRepository {
+    Set<String> getSentArticles();
+    void markArticleAsSent(String articleLink);
+    void saveNewsToFiles(List<NewsItem> newsItems, Map<String, String> newsImages);
+}
+
+// 파일 기반 뉴스 저장소 구현
+class FileNewsRepository implements NewsRepository {
+    private final Logger logger;
+    private final SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+    public FileNewsRepository(Logger logger) {
+        this.logger = logger;
+    }
+
+    @Override
+    public Set<String> getSentArticles() {
+        Set<String> sent = new HashSet<>();
+        File file = new File("sent_articles.txt");
+        if (!file.exists()) {
+            return sent;
+        }
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                sent.add(line.trim());
+            }
         } catch (Exception e) {
-            logger.severe("오류 발생: " + e.getMessage());
-            e.printStackTrace();
+            logger.warning("sent_articles.txt 읽기 실패: " + e.getMessage());
+        }
+        return sent;
+    }
+
+    @Override
+    public void markArticleAsSent(String articleLink) {
+        try (FileWriter fw = new FileWriter("sent_articles.txt", true)) {
+            fw.write(articleLink + "\n");
+        } catch (Exception e) {
+            logger.warning("sent_articles.txt 기록 실패: " + e.getMessage());
         }
     }
-    
-    // API에서 뉴스 아이템 리스트를 가져오는 메서드
-    private List<NewsItem> getNewsItems(String keyword, int display, int start, SortType sort) throws Exception {
-        List<NewsItem> newsItems = new ArrayList<>();
-        String newsResponse = getDataFromAPI("news.json", keyword, display, start, sort);
-        JSONObject newsJson = new JSONObject(newsResponse);
-        JSONArray items = newsJson.getJSONArray("items");
-        
-        for (int i = 0; i < items.length(); i++) {
-            JSONObject item = items.getJSONObject(i);
-            String title = item.getString("title").replaceAll("<.*?>", "");
-            String articleLink = item.getString("link");
-            String snippet = item.optString("description", "");
-            snippet = snippet.replaceAll("<b>", "**").replaceAll("</b>", "**");
-            
-            // 기사 업로드 시간(pubDate) 파싱
-            String pubDateStr = item.getString("pubDate");
-            Date pubDate = inputFormat.parse(pubDateStr);
-            
-            newsItems.add(new NewsItem(title, articleLink, snippet, pubDate, pubDateStr));
-        }
-        
-        return newsItems;
-    }
-    
-    // 뉴스 아이템 리스트를 처리하는 메서드
-    private void processNewsItems(List<NewsItem> newsItems, Set<String> sentArticles) {
+
+    @Override
+    public void saveNewsToFiles(List<NewsItem> newsItems, Map<String, String> newsImages) {
         try {
             // CSV와 Markdown 파일 준비
             String csvFileName = "baseball_news.csv";
@@ -165,52 +199,41 @@ class Monitoring {
                 }
 
                 for (NewsItem newsItem : newsItems) {
-                    // 중복 전송 방지를 위해 이미 전송된 기사라면 건너뛰기
-                    if (sentArticles.contains(newsItem.link)) {
-                        logger.info("이미 전송된 기사라 건너뜁니다: " + newsItem.title);
-                        continue;
-                    }
-
-                    String timestamp = outputFormat.format(newsItem.pubDate);
-
-                    // 각 뉴스 항목마다 해당 뉴스 제목을 기반으로 이미지 검색 및 다운로드
-                    String imageFileName = getImageForNews(newsItem.title);
+                    String timestamp = outputFormat.format(newsItem.getPubDate());
+                    String imageFileName = newsImages.getOrDefault(newsItem.getTitle(), "");
 
                     // CSV 기록 (이미지 파일명이 없으면 빈 문자열)
-                    csvWriter.write(String.format("%s,\"%s\",%s\n", timestamp, newsItem.title, imageFileName));
+                    csvWriter.write(String.format("%s,\"%s\",%s\n", timestamp, newsItem.getTitle(), imageFileName));
 
                     // Markdown 기록 (이미지 파일이 있으면 ![Image](images/파일명), 없으면 빈 칸)
                     String imageMarkdown = imageFileName.isEmpty() ? "" : String.format("![Image](images/%s)", imageFileName);
-                    mdWriter.write(String.format("| %s | %s | %s |\n", timestamp, newsItem.title, imageMarkdown));
-
-                    // Slack 메시지 전송: 기사 제목, 링크, 스니펫, 이미지 URL 포함
-                    String imagePublicUrl = "";
-                    if (!imageFileName.isEmpty()) {
-                        String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
-                        if (baseUrl != null && !baseUrl.isEmpty()) {
-                            imagePublicUrl = baseUrl + imageFileName;
-                        }
-                    }
-                    sendSlackMessage(newsItem.title, newsItem.link, newsItem.description, imagePublicUrl);
-
-                    // 전송한 기사 링크 기록 (중복 전송 방지)
-                    markArticleAsSent(newsItem.link);
-                    logger.info("뉴스 제목 처리됨 및 Slack 전송: " + newsItem.title);
+                    mdWriter.write(String.format("| %s | %s | %s |\n", timestamp, newsItem.getTitle(), imageMarkdown));
                 }
             }
 
             logger.info("뉴스 데이터가 CSV 및 Markdown 파일에 저장되었습니다.");
         } catch (Exception e) {
-            logger.severe("뉴스 처리 중 오류 발생: " + e.getMessage());
+            logger.severe("파일 저장 중 오류 발생: " + e.getMessage());
             e.printStackTrace();
         }
     }
+}
 
-    // 각 뉴스 제목에 대해 관련 이미지를 검색하고 다운로드하는 메서드
-    private String getImageForNews(String newsTitle) {
+// 이미지 서비스 클래스
+class ImageService {
+    private final NaverApiClient apiClient;
+    private final Logger logger;
+    private final HttpClient client = HttpClient.newHttpClient();
+
+    public ImageService(NaverApiClient apiClient, Logger logger) {
+        this.apiClient = apiClient;
+        this.logger = logger;
+    }
+
+    public String getImageForNews(String newsTitle) {
         try {
             // 뉴스 제목을 쿼리로 사용하여 이미지 API 호출 (결과 1개)
-            String imageResponse = getDataFromAPI("image", newsTitle, 1, 1, SortType.sim);
+            String imageResponse = apiClient.getDataFromAPI("image", newsTitle, 1, 1, SortType.sim);
             JSONObject imageJson = new JSONObject(imageResponse);
             JSONArray imageItems = imageJson.getJSONArray("items");
             if (imageItems.length() > 0) {
@@ -246,9 +269,19 @@ class Monitoring {
         }
         return "";
     }
+}
 
-    // Slack 메시지 전송: 기사 제목, 링크, 스니펫, 이미지 URL 포함
-    private void sendSlackMessage(String title, String articleLink, String snippet, String imagePublicUrl) {
+// Slack 알림 클래스
+class SlackNotifier {
+    private final HttpClient client;
+    private final Logger logger;
+
+    public SlackNotifier(HttpClient client, Logger logger) {
+        this.client = client;
+        this.logger = logger;
+    }
+
+    public void sendSlackMessage(String title, String articleLink, String snippet, String imagePublicUrl) {
         try {
             String slackWebhookUrl = System.getenv("SLACK_WEBHOOK_URL");
             if (slackWebhookUrl == null || slackWebhookUrl.isEmpty()) {
@@ -286,50 +319,125 @@ class Monitoring {
             logger.warning("Slack 전송 실패: " + e.getMessage());
         }
     }
+}
 
-    // 네이버 API 호출 메서드
-    private String getDataFromAPI(String path, String query, int display, int start, SortType sort) throws Exception {
-        String url = "https://openapi.naver.com/v1/search/%s".formatted(path);
-        String params = String.format("query=%s&display=%d&start=%d&sort=%s",
-                URLEncoder.encode(query, "UTF-8"), display, start, sort.value);
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url + "?" + params))
-                .GET()
-                .header("X-Naver-Client-Id", System.getenv("NAVER_CLIENT_ID"))
-                .header("X-Naver-Client-Secret", System.getenv("NAVER_CLIENT_SECRET"))
-                .build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        logger.info("API 응답 상태 코드: " + response.statusCode());
-        if (response.statusCode() != 200) {
-            throw new Exception("API 호출 실패: " + response.body());
-        }
-        return response.body();
+// 메인 뉴스 서비스 클래스
+class NewsService {
+    private final NaverApiClient apiClient;
+    private final NewsRepository repository;
+    private final ImageService imageService;
+    private final SlackNotifier slackNotifier;
+    private final Logger logger;
+    private final SimpleDateFormat inputFormat;
+
+    public NewsService(NaverApiClient apiClient, NewsRepository repository, 
+                       ImageService imageService, SlackNotifier slackNotifier, Logger logger) {
+        this.apiClient = apiClient;
+        this.repository = repository;
+        this.imageService = imageService;
+        this.slackNotifier = slackNotifier;
+        this.logger = logger;
+        this.inputFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
     }
 
-    // 이미 전송된 기사 목록 파일(sent_articles.txt)에서 기사 링크를 읽어 Set으로 반환
-    private Set<String> readSentArticles() {
-        Set<String> sent = new HashSet<>();
-        File file = new File("sent_articles.txt");
-        if (!file.exists()) {
-            return sent;
+    // 최신순과 정확도순으로 뉴스를 가져와 중복 제거 후 처리
+    public void getAndProcessNews(String keyword, int count) {
+        try {
+            // 1. 최신순으로 검색한 결과 가져오기
+            List<NewsItem> dateResults = getNewsItems(keyword, count, 1, SortType.date);
+            
+            // 2. 정확도순으로 검색한 결과 가져오기
+            List<NewsItem> simResults = getNewsItems(keyword, count, 1, SortType.sim);
+            
+            // 3. 두 결과를 합치고 중복 제거
+            Set<NewsItem> uniqueNewsItems = new LinkedHashSet<>();
+            uniqueNewsItems.addAll(dateResults);
+            uniqueNewsItems.addAll(simResults);
+            
+            // 4. 최종 목록을 시간순으로 정렬 (최신순)
+            List<NewsItem> finalNewsList = new ArrayList<>(uniqueNewsItems);
+            Collections.sort(finalNewsList);
+            
+            // 5. 이전에 전송한 기사 링크 목록 읽어 중복 전송 방지에 사용
+            Set<String> sentArticles = repository.getSentArticles();
+            
+            // 6. 처리
+            processNewsItems(finalNewsList, sentArticles);
+            
+        } catch (Exception e) {
+            logger.severe("오류 발생: " + e.getMessage());
+            e.printStackTrace();
         }
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                sent.add(line.trim());
+    }
+    
+    // API에서 뉴스 아이템 리스트를 가져오는 메서드
+    private List<NewsItem> getNewsItems(String keyword, int display, int start, SortType sort) throws Exception {
+        List<NewsItem> newsItems = new ArrayList<>();
+        String newsResponse = apiClient.getDataFromAPI("news.json", keyword, display, start, sort);
+        JSONObject newsJson = new JSONObject(newsResponse);
+        JSONArray items = newsJson.getJSONArray("items");
+        
+        for (int i = 0; i < items.length(); i++) {
+            JSONObject item = items.getJSONObject(i);
+            String title = item.getString("title").replaceAll("<.*?>", "");
+            String articleLink = item.getString("link");
+            String snippet = item.optString("description", "");
+            snippet = snippet.replaceAll("<b>", "**").replaceAll("</b>", "**");
+            
+            // 기사 업로드 시간(pubDate) 파싱
+            String pubDateStr = item.getString("pubDate");
+            Date pubDate = inputFormat.parse(pubDateStr);
+            
+            newsItems.add(new NewsItem(title, articleLink, snippet, pubDate, pubDateStr));
+        }
+        
+        return newsItems;
+    }
+    
+    // 뉴스 아이템 리스트를 처리하는 메서드
+    private void processNewsItems(List<NewsItem> newsItems, Set<String> sentArticles) {
+        try {
+            // 필터링된 뉴스 아이템과 이미지 매핑 저장
+            List<NewsItem> filteredItems = new ArrayList<>();
+            Map<String, String> newsImages = new HashMap<>();
+            
+            for (NewsItem newsItem : newsItems) {
+                // 중복 전송 방지를 위해 이미 전송된 기사라면 건너뛰기
+                if (sentArticles.contains(newsItem.getLink())) {
+                    logger.info("이미 전송된 기사라 건너뜁니다: " + newsItem.getTitle());
+                    continue;
+                }
+                
+                // 이미지 검색 및 다운로드
+                String imageFileName = imageService.getImageForNews(newsItem.getTitle());
+                if (!imageFileName.isEmpty()) {
+                    newsImages.put(newsItem.getTitle(), imageFileName);
+                }
+                
+                filteredItems.add(newsItem);
+                
+                // Slack 메시지 전송
+                String imagePublicUrl = "";
+                if (!imageFileName.isEmpty()) {
+                    String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
+                    if (baseUrl != null && !baseUrl.isEmpty()) {
+                        imagePublicUrl = baseUrl + imageFileName;
+                    }
+                }
+                slackNotifier.sendSlackMessage(newsItem.getTitle(), newsItem.getLink(), 
+                                              newsItem.getDescription(), imagePublicUrl);
+                
+                // 전송한 기사 링크 기록 (중복 전송 방지)
+                repository.markArticleAsSent(newsItem.getLink());
+                logger.info("뉴스 제목 처리됨 및 Slack 전송: " + newsItem.getTitle());
             }
+            
+            // 필터링된 기사를 파일에 저장
+            repository.saveNewsToFiles(filteredItems, newsImages);
+            
         } catch (Exception e) {
-            logger.warning("sent_articles.txt 읽기 실패: " + e.getMessage());
-        }
-        return sent;
-    }
-
-    // 전송된 기사 링크를 sent_articles.txt 파일에 추가하여 저장
-    private void markArticleAsSent(String articleLink) {
-        try (FileWriter fw = new FileWriter("sent_articles.txt", true)) {
-            fw.write(articleLink + "\n");
-        } catch (Exception e) {
-            logger.warning("sent_articles.txt 기록 실패: " + e.getMessage());
+            logger.severe("뉴스 처리 중 오류 발생: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
