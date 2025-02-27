@@ -1,0 +1,5 @@
+# Java 컴파일된 클래스 파일 제외
+*.class
+
+# Jsoup 라이브러리 제외
+jsoup.jar
