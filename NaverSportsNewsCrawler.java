@@ -372,23 +372,32 @@ class NewsService {
         String newsResponse = apiClient.getDataFromAPI("news.json", keyword, display, start, sort);
         JSONObject newsJson = new JSONObject(newsResponse);
         JSONArray items = newsJson.getJSONArray("items");
-        
+    
+        // 날짜 필터링을 위한 현재 시간 설정
+        SimpleDateFormat sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DAY_OF_YEAR, -1); // 최근 1일 이내 뉴스만 가져오기
+    
         for (int i = 0; i < items.length(); i++) {
             JSONObject item = items.getJSONObject(i);
             String title = item.getString("title").replaceAll("<.*?>", "");
             String articleLink = item.getString("link");
             String snippet = item.optString("description", "");
             snippet = snippet.replaceAll("<b>", "**").replaceAll("</b>", "**");
-            
-            // 기사 업로드 시간(pubDate) 파싱
+    
+            // 기사 날짜 필터링 (최근 7일 이내 기사만 포함)
             String pubDateStr = item.getString("pubDate");
-            Date pubDate = inputFormat.parse(pubDateStr);
-            
+            Date pubDate = sdf.parse(pubDateStr);
+            if (pubDate.before(calendar.getTime())) {
+                continue; // 최근 7일 이전 기사는 제외
+            }
+    
             newsItems.add(new NewsItem(title, articleLink, snippet, pubDate, pubDateStr));
         }
-        
+    
         return newsItems;
     }
+
     
     private void processNewsItems(List<NewsItem> newsItems, Set<String> sentArticles) {
         try {
