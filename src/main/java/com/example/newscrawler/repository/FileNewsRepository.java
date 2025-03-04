@@ -23,6 +23,15 @@ public class FileNewsRepository implements NewsRepository {
 
     public FileNewsRepository(Logger logger) {
         this.logger = logger;
+        // sent_articles.txt 파일이 없으면 생성합니다.
+        File file = new File("sent_articles.txt");
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                logger.warning("Failed to create sent_articles.txt: " + e.getMessage());
+            }
+        }
     }
 
     @Override
