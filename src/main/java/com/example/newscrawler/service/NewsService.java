@@ -1,3 +1,15 @@
+/**
+ * NewsService 클래스는 뉴스 데이터를 검색, 처리 및 저장하는 주요 비즈니스 로직을 수행합니다.
+ * - 네이버 API를 통해 최신 뉴스 기사를 검색하고, "date" 및 "sim" 정렬 방식으로 결과를 수집합니다.
+ * - 최근 3일 이내에 발행된 기사만 필터링하여 NewsItem 객체 리스트로 변환합니다.
+ * - 중복 기사를 제거한 후, 이미 전송된 기사는 건너뛰고, 새 기사의 경우 이미지 다운로드, Slack 알림 전송, 
+ *   전송 기록 업데이트 및 파일(CSV, Markdown) 저장 작업을 수행합니다.
+ * - ApiClient: 외부 API 호출을 통한 뉴스 데이터 수집 기능 제공
+ * - NewsRepository: 뉴스 기사 저장 및 전송 기록 관리 기능 제공
+ * - ImageDownloader: 뉴스 관련 이미지 다운로드 기능 제공
+ * - Notifier: Slack 등의 알림 전송 기능 제공
+ */
+
 package com.example.newscrawler.service;
 
 import com.example.newscrawler.model.NewsItem;

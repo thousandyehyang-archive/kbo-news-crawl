@@ -1,3 +1,11 @@
+/**
+ * SlackNotifierImpl 클래스는 Notifier 인터페이스의 구현체로, Slack 웹훅을 사용하여 새로운 뉴스 알림을 전송합니다.
+ * - 환경 변수 SLACK_WEBHOOK_URL을 통해 Slack 웹훅 URL을 가져옵니다.
+ * - 뉴스 제목, 기사 링크, 및 이미지 URL을 포함하는 JSON 페이로드를 구성합니다.
+ * - HttpClient를 사용하여 Slack에 POST 요청을 보내고, 응답을 로깅합니다.
+ * 이 클래스는 뉴스 알림 시스템에서 새로운 KBO 뉴스가 도착했을 때, 해당 정보를 Slack 채널로 전달하는 역할을 수행합니다.
+ */
+
 package com.example.newscrawler.service;
 
 import org.json.JSONArray;
