@@ -1,15 +1,3 @@
-/**
- * NewsService 클래스는 뉴스 데이터를 검색, 처리 및 저장하는 주요 비즈니스 로직을 수행합니다.
- * - 네이버 API를 통해 최신 뉴스 기사를 검색하고, "date" 및 "sim" 정렬 방식으로 결과를 수집합니다.
- * - 최근 3일 이내에 발행된 기사만 필터링하여 NewsItem 객체 리스트로 변환합니다.
- * - 중복 기사를 제거한 후, 이미 전송된 기사는 건너뛰고, 새 기사의 경우 이미지 다운로드, Slack 알림 전송, 
- *   전송 기록 업데이트 및 파일(CSV, Markdown) 저장 작업을 수행합니다.
- * - ApiClient: 외부 API 호출을 통한 뉴스 데이터 수집 기능 제공
- * - NewsRepository: 뉴스 기사 저장 및 전송 기록 관리 기능 제공
- * - ImageDownloader: 뉴스 관련 이미지 다운로드 기능 제공
- * - Notifier: Slack 등의 알림 전송 기능 제공
- */
-
 package com.example.newscrawler.service;
 
 import com.example.newscrawler.model.NewsItem;
@@ -38,23 +26,31 @@ public class NewsService {
         this.logger = logger;
     }
 
+    /**
+     * processNews 메서드는 지정된 키워드로 각각 10개씩 기사를 검색("date"와 "sim")한 후,
+     * 중복 제거 및 최신순 정렬을 거쳐, 아직 전송되지 않은 기사 중 가장 최신의 기사 단 하나만 Slack으로 전송합니다.
+     *
+     * @param keyword 검색에 사용할 키워드
+     * @param count   각 기준당 검색 개수 (여기서는 10)
+     */
     public void processNews(String keyword, int count) {
         try {
-            // 최신순("date")과 정확도순("sim") 검색 결과를 각각 가져옵니다.
+            // "date"와 "sim" 기준으로 각각 count(10)개씩 기사 검색
             List<NewsItem> dateResults = getNewsItems(keyword, count, 1, "date");
             List<NewsItem> simResults = getNewsItems(keyword, count, 1, "sim");
 
-            // 두 결과를 합치고 중복된 뉴스 기사를 제거합니다.
+            // 두 결과를 합치고 중복된 기사를 제거
             Set<NewsItem> uniqueNewsItems = new LinkedHashSet<>();
             uniqueNewsItems.addAll(dateResults);
             uniqueNewsItems.addAll(simResults);
 
             List<NewsItem> finalNewsList = new ArrayList<>(uniqueNewsItems);
-            Collections.sort(finalNewsList); // 최신 기사가 먼저 오도록 정렬
+            Collections.sort(finalNewsList); // 최신 기사가 첫 번째에 오도록 정렬
 
-            // 이전에 전송된 기사 링크 목록을 조회하여 중복 전송을 방지합니다.
+            // 이미 전송한 기사 링크 목록을 불러옴
             Set<String> sentArticles = repository.getSentArticles();
 
+            // 최신 기사 중 아직 보내지 않은 기사 하나를 선택하여 처리
             processNewsItems(finalNewsList, sentArticles);
 
         } catch (Exception e) {
@@ -63,6 +59,17 @@ public class NewsService {
         }
     }
 
+    /**
+     * getNewsItems 메서드는 네이버 API를 통해 주어진 키워드로 기사를 검색하고,
+     * 최근 3일 이내에 발행된 기사만 NewsItem 객체 리스트로 반환합니다.
+     *
+     * @param keyword 검색어
+     * @param display 검색 결과 표시 수
+     * @param start   검색 시작 인덱스
+     * @param sort    정렬 방식 ("date" 또는 "sim")
+     * @return 필터링된 NewsItem 리스트
+     * @throws Exception API 호출 또는 JSON 파싱 중 발생한 예외
+     */
     private List<NewsItem> getNewsItems(String keyword, int display, int start, String sort) throws Exception {
         List<NewsItem> newsItems = new ArrayList<>();
         String response = apiClient.getData("news.json", keyword, display, start, sort);
@@ -76,7 +83,11 @@ public class NewsService {
         for (int i = 0; i < items.length(); i++) {
             JSONObject item = items.getJSONObject(i);
             String title = item.getString("title").replaceAll("<.*?>", "");
-            String articleLink = item.getString("link");
+            
+            // 기사 링크 정규화: 쿼리 파라미터 제거
+            String rawLink = item.getString("link");
+            String articleLink = rawLink.split("\\?")[0];
+
             String snippet = item.optString("description", "");
             snippet = snippet.replaceAll("<b>", "**").replaceAll("</b>", "**");
 
@@ -91,37 +102,48 @@ public class NewsService {
         return newsItems;
     }
 
+    /**
+     * processNewsItems 메서드는 정렬된 뉴스 기사 리스트에서 아직 전송되지 않은 기사 중 가장 최신의 기사 단 하나를 선택하여
+     * 이미지 다운로드, Slack 알림 전송, 전송 기록 업데이트 및 파일 저장을 수행합니다.
+     *
+     * @param newsItems    정렬된 NewsItem 리스트
+     * @param sentArticles 이미 전송된 기사 링크의 집합
+     */
     private void processNewsItems(List<NewsItem> newsItems, Set<String> sentArticles) {
         try {
-            List<NewsItem> filteredItems = new ArrayList<>();
-            Map<String, String> newsImages = new HashMap<>();
-
+            NewsItem articleToSend = null;
             for (NewsItem newsItem : newsItems) {
-                if (sentArticles.contains(newsItem.getLink())) {
-                    logger.info("Article already sent: " + newsItem.getTitle());
-                    continue;
+                if (!sentArticles.contains(newsItem.getLink())) {
+                    articleToSend = newsItem;
+                    break;
                 }
-
-                String imageFileName = imageDownloader.downloadImage(newsItem.getTitle());
-                if (!imageFileName.isEmpty()) {
-                    newsImages.put(newsItem.getTitle(), imageFileName);
-                }
-
-                filteredItems.add(newsItem);
-
-                String imagePublicUrl = "";
-                String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
-                if (baseUrl != null && !baseUrl.isEmpty() && !imageFileName.isEmpty()) {
-                    imagePublicUrl = baseUrl + imageFileName;
-                }
-
-                notifier.notify(newsItem.getTitle(), newsItem.getLink(), imagePublicUrl);
-                repository.markArticleAsSent(newsItem.getLink());
-                // 이미 전송한 기사의 링크를 로컬 Set에 추가하여 중복 전송을 방지합니다.
-                sentArticles.add(newsItem.getLink());
-                logger.info("Processed and notified: " + newsItem.getTitle());
+            }
+            if (articleToSend == null) {
+                logger.info("No new article found to send.");
+                return;
             }
 
+            // 이미지 다운로드 처리
+            String imageFileName = imageDownloader.downloadImage(articleToSend.getTitle());
+            String imagePublicUrl = "";
+            String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
+            if (baseUrl != null && !baseUrl.isEmpty() && !imageFileName.isEmpty()) {
+                imagePublicUrl = baseUrl + imageFileName;
+            }
+
+            // Slack 알림 전송
+            notifier.notify(articleToSend.getTitle(), articleToSend.getLink(), imagePublicUrl);
+            repository.markArticleAsSent(articleToSend.getLink());
+            sentArticles.add(articleToSend.getLink());
+            logger.info("Processed and notified: " + articleToSend.getTitle());
+
+            // 저장할 때 최신 기사 하나만 저장
+            List<NewsItem> filteredItems = new ArrayList<>();
+            filteredItems.add(articleToSend);
+            Map<String, String> newsImages = new HashMap<>();
+            if (!imageFileName.isEmpty()) {
+                newsImages.put(articleToSend.getTitle(), imageFileName);
+            }
             repository.saveNews(filteredItems, newsImages);
         } catch (Exception e) {
             logger.severe("Error processing news items: " + e.getMessage());
