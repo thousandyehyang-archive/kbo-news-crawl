@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # 매일 한국 시간 오전 9시
   workflow_dispatch:     # 수동 실행 가능
 
+permissions:
+  contents: write
+
 jobs:
   crawl_news:
     runs-on: ubuntu-latest
@@ -39,7 +42,7 @@ jobs:
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          KEYWORD: ${{ secrets.KEYWORD }}  # 또는 기본값("국내 야구 스포츠") 사용 가능
+          KEYWORD: ${{ secrets.KEYWORD }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_IMAGE_BASE_URL: ${{ secrets.SLACK_IMAGE_BASE_URL }}
         run: |
