@@ -40,18 +40,19 @@ public class NewsService {
 
     public void processNews(String keyword, int count) {
         try {
-            // 최신순 및 정확도순 검색 결과 가져오기
+            // 최신순("date")과 정확도순("sim") 검색 결과를 각각 가져옵니다.
             List<NewsItem> dateResults = getNewsItems(keyword, count, 1, "date");
             List<NewsItem> simResults = getNewsItems(keyword, count, 1, "sim");
 
-            // 두 결과를 합치고 중복 제거
+            // 두 결과를 합치고 중복된 뉴스 기사를 제거합니다.
             Set<NewsItem> uniqueNewsItems = new LinkedHashSet<>();
             uniqueNewsItems.addAll(dateResults);
             uniqueNewsItems.addAll(simResults);
 
             List<NewsItem> finalNewsList = new ArrayList<>(uniqueNewsItems);
-            Collections.sort(finalNewsList);
+            Collections.sort(finalNewsList); // 최신 기사가 먼저 오도록 정렬
 
+            // 이전에 전송된 기사 링크 목록을 조회하여 중복 전송을 방지합니다.
             Set<String> sentArticles = repository.getSentArticles();
 
             processNewsItems(finalNewsList, sentArticles);
@@ -70,7 +71,7 @@ public class NewsService {
 
         SimpleDateFormat sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.ENGLISH);
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_YEAR, -3); // 최근 3일 이내 기사만
+        calendar.add(Calendar.DAY_OF_YEAR, -3); // 최근 3일 이내 기사만 포함
 
         for (int i = 0; i < items.length(); i++) {
             JSONObject item = items.getJSONObject(i);
@@ -116,6 +117,8 @@ public class NewsService {
 
                 notifier.notify(newsItem.getTitle(), newsItem.getLink(), imagePublicUrl);
                 repository.markArticleAsSent(newsItem.getLink());
+                // 이미 전송한 기사의 링크를 로컬 Set에 추가하여 중복 전송을 방지합니다.
+                sentArticles.add(newsItem.getLink());
                 logger.info("Processed and notified: " + newsItem.getTitle());
             }
 
