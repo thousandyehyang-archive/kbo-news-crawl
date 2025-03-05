@@ -111,40 +111,43 @@ public class NewsService {
      */
     private void processNewsItems(List<NewsItem> newsItems, Set<String> sentArticles) {
         try {
-            NewsItem articleToSend = null;
+            List<NewsItem> articlesToSend = new ArrayList<>();
+    
+            // 아직 전송되지 않은 기사 중 3개 선택
             for (NewsItem newsItem : newsItems) {
                 if (!sentArticles.contains(newsItem.getLink())) {
-                    articleToSend = newsItem;
-                    break;
+                    articlesToSend.add(newsItem);
+                    if (articlesToSend.size() >= 3) break; // 최대 3개만 선택
                 }
             }
-            if (articleToSend == null) {
-                logger.info("No new article found to send.");
+    
+            if (articlesToSend.isEmpty()) {
+                logger.info("No new articles found to send.");
                 return;
             }
-
-            // 이미지 다운로드 처리
-            String imageFileName = imageDownloader.downloadImage(articleToSend.getTitle());
-            String imagePublicUrl = "";
-            String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
-            if (baseUrl != null && !baseUrl.isEmpty() && !imageFileName.isEmpty()) {
-                imagePublicUrl = baseUrl + imageFileName;
-            }
-
-            // Slack 알림 전송
-            notifier.notify(articleToSend.getTitle(), articleToSend.getLink(), imagePublicUrl);
-            repository.markArticleAsSent(articleToSend.getLink());
-            sentArticles.add(articleToSend.getLink());
-            logger.info("Processed and notified: " + articleToSend.getTitle());
-
-            // 저장할 때 최신 기사 하나만 저장
-            List<NewsItem> filteredItems = new ArrayList<>();
-            filteredItems.add(articleToSend);
+    
+            // 이미지 다운로드 및 Slack 알림 전송
             Map<String, String> newsImages = new HashMap<>();
-            if (!imageFileName.isEmpty()) {
-                newsImages.put(articleToSend.getTitle(), imageFileName);
+            for (NewsItem article : articlesToSend) {
+                String imageFileName = imageDownloader.downloadImage(article.getTitle());
+                String imagePublicUrl = "";
+                String baseUrl = System.getenv("SLACK_IMAGE_BASE_URL");
+    
+                if (baseUrl != null && !baseUrl.isEmpty() && !imageFileName.isEmpty()) {
+                    imagePublicUrl = baseUrl + imageFileName;
+                    newsImages.put(article.getTitle(), imageFileName);
+                }
+    
+                // Slack 알림 전송
+                notifier.notify(article.getTitle(), article.getLink(), imagePublicUrl);
+                repository.markArticleAsSent(article.getLink());
+                sentArticles.add(article.getLink());
+                logger.info("Processed and notified: " + article.getTitle());
             }
-            repository.saveNews(filteredItems, newsImages);
+    
+            // 저장할 때 3개의 기사 저장
+            repository.saveNews(articlesToSend, newsImages);
+    
         } catch (Exception e) {
             logger.severe("Error processing news items: " + e.getMessage());
             e.printStackTrace();
