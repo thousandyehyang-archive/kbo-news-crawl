@@ -12,3 +12,5 @@
 | 2025-03-05 00:30:00 | 합작 30승? 콜! 공포의 외인 듀오 | ![Image](images/1741135250979_합작_30승__콜__공포의_외인_듀오_image.jpg) |
 | 2025-03-05 00:41:00 | 韓 11승→견갑골 부상→한국시리즈 불발→美 복귀…'삼성 출신' 코너 KK... |  |
 | 2025-03-04 09:45:00 | Florial ready to give 'my 100 percent every time' for new KBO team | ![Image](images/1741135512989_Florial_ready_to_giv_image.jpg) |
+| 2025-03-06 00:30:00 | As new captain, Landers pitcher Kim Kwang-hyun looks to lead team to big ... |  |
+| 2025-03-05 08:50:00 | SSG 김광현, KBO리그 연봉킹 | ![Image](images/1741221642260_SSG_김광현__KBO리그_연봉킹_image.jpg) |
