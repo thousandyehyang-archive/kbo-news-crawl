@@ -14,3 +14,4 @@
 | 2025-03-04 09:45:00 | Florial ready to give 'my 100 percent every time' for new KBO team | ![Image](images/1741135512989_Florial_ready_to_giv_image.jpg) |
 | 2025-03-06 00:30:00 | As new captain, Landers pitcher Kim Kwang-hyun looks to lead team to big ... |  |
 | 2025-03-05 08:50:00 | SSG 김광현, KBO리그 연봉킹 | ![Image](images/1741221642260_SSG_김광현__KBO리그_연봉킹_image.jpg) |
+| 2025-03-06 04:00:00 | “고영표 공 어느 정도로 떨어지는지 경험해봐…” KIA ML 88홈런 거포는... |  |
