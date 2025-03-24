@@ -39,3 +39,5 @@ https://m.sports.naver.com/general/article/468/0001133907
 https://m.sports.naver.com/kbaseball/article/001/0015279499
 https://www.youthdaily.co.kr/news/article.html
 https://n.news.naver.com/mnews/article/001/0015281240
+http://www.kdfnews.com/news/articleView.html
+https://www.jemin.com/news/articleView.html
