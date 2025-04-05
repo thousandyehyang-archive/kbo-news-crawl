@@ -62,3 +62,5 @@ https://m.sports.naver.com/wbaseball/article/241/0003425947
 https://m.sports.naver.com/kbaseball/article/003/0013159991
 https://m.sports.naver.com/kbaseball/article/047/0002468468
 https://n.news.naver.com/mnews/article/421/0008171444
+https://m.sports.naver.com/kbaseball/article/477/0000543202
+https://m.sports.naver.com/kbaseball/article/001/0015311082
