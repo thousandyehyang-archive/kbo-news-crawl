@@ -71,3 +71,5 @@ https://m.sports.naver.com/kbaseball/article/421/0008176608
 http://www.beyondpost.co.kr/view.php
 https://n.news.naver.com/mnews/article/003/0013169573
 https://m.sports.naver.com/kbaseball/article/410/0001060832
+https://m.sports.naver.com/kbaseball/article/410/0001061109
+https://n.news.naver.com/mnews/article/001/0015321098
