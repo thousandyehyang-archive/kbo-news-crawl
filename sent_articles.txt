@@ -80,3 +80,5 @@ https://m.sports.naver.com/kbaseball/article/056/0011930349
 https://www.dailysportshankook.co.kr/news/articleView.html
 http://www.apparelnews.co.kr/news/news_view/
 https://n.news.naver.com/mnews/article/241/0003428962
+https://m.sports.naver.com/kbaseball/article/410/0001061837
+https://n.news.naver.com/mnews/article/243/0000076312
