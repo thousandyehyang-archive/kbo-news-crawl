@@ -102,3 +102,5 @@
 | 2025-04-21 00:00:00 | 'I'm more than just a baseball player': KBO pitcher Cole Irvin wants to s... | ![Image](images/1745196386459__I_m_more_than_just__image.jpg) |
 | 2025-04-22 00:42:00 | “최고 150km, 스위퍼도 던진다” 왜 아시아쿼터 테스트 투수를 대체 외... | ![Image](images/1745282594195__최고_150km__스위퍼도_던진다__image.jpg) |
 | 2025-04-22 00:38:00 | Flying high again: Eagles soar in KBO standings thanks to dominant pitchi... | ![Image](images/1745282596667_Flying_high_again__E_image.jpg) |
+| 2025-04-23 00:42:00 | 신한금융그룹, KBO·K리그 무대에서 펼치는 '소방 가족의 날' | ![Image](images/1745368994183_신한금융그룹__KBO_K리그_무대에서_image.jpg) |
+| 2025-04-22 23:25:00 | 2025 KBO리그. 역대 최소 경기 200만 관중...평균 19% 증가 | ![Image](images/1745368996747_2025_KBO리그__역대_최소_경기_image.jpg) |
