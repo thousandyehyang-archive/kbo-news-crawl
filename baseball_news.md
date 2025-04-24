@@ -104,3 +104,4 @@
 | 2025-04-22 00:38:00 | Flying high again: Eagles soar in KBO standings thanks to dominant pitchi... | ![Image](images/1745282596667_Flying_high_again__E_image.jpg) |
 | 2025-04-23 00:42:00 | 신한금융그룹, KBO·K리그 무대에서 펼치는 '소방 가족의 날' | ![Image](images/1745368994183_신한금융그룹__KBO_K리그_무대에서_image.jpg) |
 | 2025-04-22 23:25:00 | 2025 KBO리그. 역대 최소 경기 200만 관중...평균 19% 증가 | ![Image](images/1745368996747_2025_KBO리그__역대_최소_경기_image.jpg) |
+| 2025-04-24 00:41:00 | 대타로 출전해 쐐기 2타점 적시 2루타 ‘쾅!’…베테랑의 품격 보여준 ... | ![Image](images/1745455395461_대타로_출전해_쐐기_2타점_적시_2루_image.jpg) |
