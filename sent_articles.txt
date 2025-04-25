@@ -98,3 +98,5 @@ https://n.news.naver.com/mnews/article/001/0015343685
 http://www.press9.kr/news/articleView.html
 https://m.sports.naver.com/kbaseball/article/018/0005994773
 https://m.sports.naver.com/kbaseball/article/410/0001063816
+https://m.sports.naver.com/kbaseball/article/109/0005291592
+https://n.news.naver.com/mnews/article/003/0013204649
