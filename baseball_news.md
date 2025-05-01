@@ -115,3 +115,5 @@
 | 2025-04-29 00:30:00 | 도미노피자, ‘KBO 콜라보레이션 키링 굿즈’ 프로모션 진행 | ![Image](images/1745887426575_도미노피자___KBO_콜라보레이션_키_image.jpg) |
 | 2025-04-28 09:11:00 | 이택근·이대형 해설위원, KBO 전력강화위원에 선임 | ![Image](images/1745887428393_이택근_이대형_해설위원__KBO_전력_image.jpg) |
 | 2025-04-29 23:52:00 | &quot;KBO 열풍 타고 홈런&quot;…삼립 '크보빵' 1000만봉 판매 돌파 | ![Image](images/1745973834413__quot_KBO_열풍_타고_홈런_q_image.png) |
+| 2025-05-01 00:45:00 | '1위와 단 2G차' 롯데 이래서 강하구나, 자꾸 어디서 선수가 나온다... 타... | ![Image](images/1746060629245__1위와_단_2G차__롯데_이래서_강_image.jpg) |
+| 2025-04-30 13:00:00 | Ex-KBO MVP heating up after adjusting to new strike zone | ![Image](images/1746060631211_Ex_KBO_MVP_heating_u_image.jpg) |

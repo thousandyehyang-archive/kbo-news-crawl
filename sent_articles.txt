@@ -108,3 +108,5 @@ https://n.news.naver.com/mnews/article/119/0002950170
 https://www.wikitree.co.kr/articles/1046193
 https://m.sports.naver.com/kbaseball/article/421/0008219862
 https://n.news.naver.com/mnews/article/421/0008222754
+https://m.sports.naver.com/kbaseball/article/108/0003324995
+https://n.news.naver.com/mnews/article/001/0015362891
