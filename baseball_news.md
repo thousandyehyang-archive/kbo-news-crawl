@@ -117,3 +117,5 @@
 | 2025-04-29 23:52:00 | &quot;KBO 열풍 타고 홈런&quot;…삼립 '크보빵' 1000만봉 판매 돌파 | ![Image](images/1745973834413__quot_KBO_열풍_타고_홈런_q_image.png) |
 | 2025-05-01 00:45:00 | '1위와 단 2G차' 롯데 이래서 강하구나, 자꾸 어디서 선수가 나온다... 타... | ![Image](images/1746060629245__1위와_단_2G차__롯데_이래서_강_image.jpg) |
 | 2025-04-30 13:00:00 | Ex-KBO MVP heating up after adjusting to new strike zone | ![Image](images/1746060631211_Ex_KBO_MVP_heating_u_image.jpg) |
+| 2025-05-02 00:41:00 | 두산 데뷔전서 홀드에 화끈한 포효까지…다시 돌아가는 고효준의 야구 ... | ![Image](images/1746146656518_두산_데뷔전서_홀드에_화끈한_포효까지_image.jpg) |
+| 2025-05-01 23:50:00 | (Yonhap Interview) Unheralded rookie pitcher eyes big KBO prize | ![Image](images/1746146660266__Yonhap_Interview__U_image.jpg) |
