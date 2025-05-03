@@ -119,3 +119,5 @@
 | 2025-04-30 13:00:00 | Ex-KBO MVP heating up after adjusting to new strike zone | ![Image](images/1746060631211_Ex_KBO_MVP_heating_u_image.jpg) |
 | 2025-05-02 00:41:00 | 두산 데뷔전서 홀드에 화끈한 포효까지…다시 돌아가는 고효준의 야구 ... | ![Image](images/1746146656518_두산_데뷔전서_홀드에_화끈한_포효까지_image.jpg) |
 | 2025-05-01 23:50:00 | (Yonhap Interview) Unheralded rookie pitcher eyes big KBO prize | ![Image](images/1746146660266__Yonhap_Interview__U_image.jpg) |
+| 2025-05-03 00:41:00 | “선수처럼 할 수 있을까”→복귀 첫 타석서 결승 2점포 ‘쾅!’…미소... |  |
+| 2025-05-02 23:00:00 | (Yonhap Interview) Young family helps veteran KBO pitcher get over bad ga... | ![Image](images/1746232994286__Yonhap_Interview__Y_image.jpg) |
