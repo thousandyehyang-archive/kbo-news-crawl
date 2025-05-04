@@ -121,3 +121,4 @@
 | 2025-05-01 23:50:00 | (Yonhap Interview) Unheralded rookie pitcher eyes big KBO prize | ![Image](images/1746146660266__Yonhap_Interview__U_image.jpg) |
 | 2025-05-03 00:41:00 | “선수처럼 할 수 있을까”→복귀 첫 타석서 결승 2점포 ‘쾅!’…미소... |  |
 | 2025-05-02 23:00:00 | (Yonhap Interview) Young family helps veteran KBO pitcher get over bad ga... | ![Image](images/1746232994286__Yonhap_Interview__Y_image.jpg) |
+| 2025-05-04 00:42:00 | 다저스 김혜성, 마침내 MLB 콜업… 역대 28호 한국인 빅리거 눈앞 | ![Image](images/1746319819168_다저스_김혜성__마침내_MLB_콜업__image.jpg) |

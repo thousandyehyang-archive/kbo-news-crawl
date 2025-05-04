@@ -114,3 +114,4 @@ https://m.sports.naver.com/kbaseball/article/410/0001065326
 https://n.news.naver.com/mnews/article/001/0015365309
 https://m.sports.naver.com/kbaseball/article/410/0001065554
 https://n.news.naver.com/mnews/article/001/0015367279
+http://www.hansbiz.co.kr/news/articleView.html
