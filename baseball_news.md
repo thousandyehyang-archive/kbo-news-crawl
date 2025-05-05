@@ -122,3 +122,5 @@
 | 2025-05-03 00:41:00 | “선수처럼 할 수 있을까”→복귀 첫 타석서 결승 2점포 ‘쾅!’…미소... |  |
 | 2025-05-02 23:00:00 | (Yonhap Interview) Young family helps veteran KBO pitcher get over bad ga... | ![Image](images/1746232994286__Yonhap_Interview__Y_image.jpg) |
 | 2025-05-04 00:42:00 | 다저스 김혜성, 마침내 MLB 콜업… 역대 28호 한국인 빅리거 눈앞 | ![Image](images/1746319819168_다저스_김혜성__마침내_MLB_콜업__image.jpg) |
+| 2025-05-05 00:41:00 | “아시아 쿼터로 한국 돌아오고파”…데뷔전서 승리 따낸 LG 코엔 윈의 ... | ![Image](images/1746406046725__아시아_쿼터로_한국_돌아오고파__데_image.jpg) |
+| 2025-05-04 08:42:00 | 'KBO 데뷔전서 선발승' 윈 &quot;생애 가장 중요한 등판, 일단 성공&quot; | ![Image](images/1746406048668__KBO_데뷔전서_선발승__윈__qu_image.jpg) |
