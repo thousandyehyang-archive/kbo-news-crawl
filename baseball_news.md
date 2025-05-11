@@ -133,3 +133,5 @@
 | 2025-05-08 05:50:00 | 폰세, KBO리그 3∼4월 MVP…한화 외국인 투수 최초 수상자 | ![Image](images/1746751471138_폰세__KBO리그_3_4월_MVP_한_image.png) |
 | 2025-05-10 00:41:00 | 개막 로스터 탈락→39G 만에 콜업…'40억' 사이드암의 반성과 각오 &quot;무에... | ![Image](images/1746837742033_개막_로스터_탈락_39G_만에_콜업__image.jpg) |
 | 2025-05-09 13:40:00 | (LEAD) Eagles rally past Heroes for 10th straight win in KBO | ![Image](images/1746837744310__LEAD__Eagles_rally__image.jpg) |
+| 2025-05-11 00:42:00 | ‘5회까지 97구→6회 등판 자청→112구 무실점’ 투혼의 외인 투수, 이러... | ![Image](images/1746924517311__5회까지_97구_6회_등판_자청_1_image.jpg) |
+| 2025-05-10 04:11:00 | KBO club sticking to alternate stadium plan despite home city's offer | ![Image](images/1746924519835_KBO_club_sticking_to_image.jpg) |
