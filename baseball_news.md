@@ -136,3 +136,4 @@
 | 2025-05-11 00:42:00 | ‘5회까지 97구→6회 등판 자청→112구 무실점’ 투혼의 외인 투수, 이러... | ![Image](images/1746924517311__5회까지_97구_6회_등판_자청_1_image.jpg) |
 | 2025-05-10 04:11:00 | KBO club sticking to alternate stadium plan despite home city's offer | ![Image](images/1746924519835_KBO_club_sticking_to_image.jpg) |
 | 2025-05-11 23:49:00 | '불꽃야구' 대학 No.1 사이드암→KBO 전설의 마구 주인공 출격 | ![Image](images/1747010872521__불꽃야구__대학_No_1_사이드암__image.jpg) |
+| 2025-05-13 00:20:00 | 도미노피자, KBO 열풍 잇는 '리틀야구대회' 성료 | ![Image](images/1747097095155_도미노피자__KBO_열풍_잇는__리틀_image.jpg) |
