@@ -139,3 +139,4 @@
 | 2025-05-13 00:20:00 | 도미노피자, KBO 열풍 잇는 '리틀야구대회' 성료 | ![Image](images/1747097095155_도미노피자__KBO_열풍_잇는__리틀_image.jpg) |
 | 2025-05-14 00:36:00 | 디아즈 16호 대포+이승현 시즌 첫 무실점 피칭! 삼성, '약속의 땅'에서 ... | ![Image](images/1747183484492_디아즈_16호_대포_이승현_시즌_첫__image.jpg) |
 | 2025-05-13 11:37:00 | Quiet KBO star burnishes legacy with 500th home run | ![Image](images/1747183487963_Quiet_KBO_star_burni_image.jpg) |
+| 2025-05-15 00:41:00 | 한화 16경기 연속 매진, 김경문 &quot;류현진 덕에 인기 더 올랐다&quot; [IS 대전] | ![Image](images/1747269844171_한화_16경기_연속_매진__김경문___image.jpg) |
