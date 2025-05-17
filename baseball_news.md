@@ -141,3 +141,4 @@
 | 2025-05-13 11:37:00 | Quiet KBO star burnishes legacy with 500th home run | ![Image](images/1747183487963_Quiet_KBO_star_burni_image.jpg) |
 | 2025-05-15 00:41:00 | 한화 16경기 연속 매진, 김경문 &quot;류현진 덕에 인기 더 올랐다&quot; [IS 대전] | ![Image](images/1747269844171_한화_16경기_연속_매진__김경문___image.jpg) |
 | 2025-05-16 00:42:00 | KBO '월간 씬-스틸러상' 3~4월 수상자에 한화 홍창화 응원단장 | ![Image](images/1747356325092_KBO__월간_씬_스틸러상__3_4월_image.jpg) |
+| 2025-05-17 00:41:00 | “패스트볼 힘 있더라”…호부지 칭찬 받은 김태훈, NC 불펜진에 힘 보... | ![Image](images/1747442629901__패스트볼_힘_있더라__호부지_칭찬__image.jpg) |
