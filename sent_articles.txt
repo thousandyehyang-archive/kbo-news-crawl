@@ -162,3 +162,5 @@ https://m.sports.naver.com/wbaseball/article/076/0004282654
 https://m.sports.naver.com/kbaseball/article/001/0015423061
 https://www.newswhoplus.com/news/articleView.html
 https://n.news.naver.com/mnews/article/009/0005501814
+http://www.rpm9.com/news/article.html
+https://n.news.naver.com/mnews/article/001/0015425911
