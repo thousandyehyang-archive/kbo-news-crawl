@@ -164,3 +164,5 @@ https://www.newswhoplus.com/news/articleView.html
 https://n.news.naver.com/mnews/article/009/0005501814
 http://www.rpm9.com/news/article.html
 https://n.news.naver.com/mnews/article/001/0015425911
+https://m.sports.naver.com/wbaseball/article/477/0000553292
+https://m.sports.naver.com/kbaseball/article/003/0013281307
