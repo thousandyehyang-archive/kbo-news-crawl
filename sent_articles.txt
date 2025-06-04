@@ -166,3 +166,5 @@ http://www.rpm9.com/news/article.html
 https://n.news.naver.com/mnews/article/001/0015425911
 https://m.sports.naver.com/wbaseball/article/477/0000553292
 https://m.sports.naver.com/kbaseball/article/003/0013281307
+https://idsn.co.kr/news/view/1065571751077287
+https://m.sports.naver.com/kbaseball/article/001/0015429230
