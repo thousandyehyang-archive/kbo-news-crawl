@@ -193,3 +193,5 @@
 | 2025-06-13 23:00:00 | KBO 전구단 한 시즌 최다 관중 돌파하나…삼성 160만명 페이스 | ![Image](images/1749861859219_KBO_전구단_한_시즌_최다_관중_돌_image.jpg) |
 | 2025-06-15 00:51:00 | 부상 병동 롯데, '정신력' 아닌 '실력'으로 버틴다…&quot;기술 크게 향상돼... | ![Image](images/1749948773685_부상_병동_롯데___정신력__아닌___image.jpg) |
 | 2025-06-14 13:20:00 | Former MLB, KBO star Choo Shin-soo sent off in emotional ceremony | ![Image](images/1749948776016_Former_MLB__KBO_star_image.jpg) |
+| 2025-06-16 00:48:00 | 티빙, 웨이브와 ‘더블 이용권’ 출시...“하나의 구독으로 두 플랫폼 ... | ![Image](images/1750034973317_티빙__웨이브와__더블_이용권__출시_image.png) |
+| 2025-06-16 00:13:00 | Back on top in KBO, Eagles in for another big series | ![Image](images/1750034976057_Back_on_top_in_KBO___image.jpeg) |
