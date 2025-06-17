@@ -195,3 +195,5 @@
 | 2025-06-14 13:20:00 | Former MLB, KBO star Choo Shin-soo sent off in emotional ceremony | ![Image](images/1749948776016_Former_MLB__KBO_star_image.jpg) |
 | 2025-06-16 00:48:00 | 티빙, 웨이브와 ‘더블 이용권’ 출시...“하나의 구독으로 두 플랫폼 ... | ![Image](images/1750034973317_티빙__웨이브와__더블_이용권__출시_image.png) |
 | 2025-06-16 00:13:00 | Back on top in KBO, Eagles in for another big series | ![Image](images/1750034976057_Back_on_top_in_KBO___image.jpeg) |
+| 2025-06-17 00:45:00 | SSG 랜더스, 28일 ‘짐승’ 김강민 은퇴식 개최 | ![Image](images/1750121190499_SSG_랜더스__28일__짐승__김강_image.jpg) |
+| 2025-06-16 06:41:00 | 한화 김서현, KBO 올스타 1·2차 팬투표 1위 질주 | ![Image](images/1750121192802_한화_김서현__KBO_올스타_1_2차_image.jpg) |
