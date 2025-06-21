@@ -203,3 +203,4 @@
 | 2025-06-18 13:49:00 | Twins walk off Dinos to snap losing streak in KBO |  |
 | 2025-06-20 00:41:00 | KKKKKKKKKK, 11호 QS, 157km 광속구까지 꽝! 갈수록 괴물이다...올러 &quot;미국... | ![Image](images/1750380389701_KKKKKKKKKK__11호_QS___image.jpg) |
 | 2025-06-19 06:03:00 | 에버랜드, KBO와 ‘최강레시 시즌2’ 출시 | ![Image](images/1750380392863_에버랜드__KBO와__최강레시_시즌2_image.jpg) |
+| 2025-06-21 00:39:00 | 롯데, 22일 ‘크러시 페스티벌’ 진행…시구자는 레드벨벳 웬디 | ![Image](images/1750466735926_롯데__22일__크러시_페스티벌__진_image.jpg) |
