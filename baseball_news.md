@@ -207,3 +207,5 @@
 | 2025-06-22 00:42:00 | 작년만 못하다고? 왕자님의 응원 당부 → &quot;팬들은 정말 속이 많이 뒤집... | ![Image](images/1750553562154_작년만_못하다고__왕자님의_응원_당부_image.jpg) |
 | 2025-06-23 00:46:00 | 김운남 고양시의회 의장 &quot;프로야구 관중 늘어나는데, 노후 홈구장 안전... | ![Image](images/1750639876266_김운남_고양시의회_의장__quot_프_image.jpg) |
 | 2025-06-23 00:15:00 | Tigers seeking to stretch winning streak vs. last-place club in KBO | ![Image](images/1750639879360_Tigers_seeking_to_st_image.jpg) |
+| 2025-06-24 00:45:00 | 야구 올스타전 명단에서 가장 눈에 띄는 이름 | ![Image](images/1750726036508_야구_올스타전_명단에서_가장_눈에_띄_image.jpg) |
+| 2025-06-23 06:42:00 | SSG 최정 등 2025 KBO 올스타전 베스트12 확정 | ![Image](images/1750726039085_SSG_최정_등_2025_KBO_올스_image.jpg) |
