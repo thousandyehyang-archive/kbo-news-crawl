@@ -209,3 +209,5 @@
 | 2025-06-23 00:15:00 | Tigers seeking to stretch winning streak vs. last-place club in KBO | ![Image](images/1750639879360_Tigers_seeking_to_st_image.jpg) |
 | 2025-06-24 00:45:00 | 야구 올스타전 명단에서 가장 눈에 띄는 이름 | ![Image](images/1750726036508_야구_올스타전_명단에서_가장_눈에_띄_image.jpg) |
 | 2025-06-23 06:42:00 | SSG 최정 등 2025 KBO 올스타전 베스트12 확정 | ![Image](images/1750726039085_SSG_최정_등_2025_KBO_올스_image.jpg) |
+| 2025-06-25 00:46:00 | 디트로이트에서 ML 데뷔 꿈 이룰까 “고우석, 디트로이트와 마이너리그... | ![Image](images/1750812478940_디트로이트에서_ML_데뷔_꿈_이룰까__image.jpg) |
+| 2025-06-24 23:36:00 | 야구 덕후 모여라…CGV, 극장 최초 ‘KBO 콜라보 굿즈’ 출시 | ![Image](images/1750812482168_야구_덕후_모여라_CGV__극장_최초_image.jpg) |
