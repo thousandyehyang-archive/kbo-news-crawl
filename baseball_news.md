@@ -215,3 +215,5 @@
 | 2025-06-25 00:55:00 | 팝콘버킷에 캔쿨러…CGV, 'KBO 협업 굿즈' 출시 | ![Image](images/1750898836788_팝콘버킷에_캔쿨러_CGV___KBO__image.png) |
 | 2025-06-27 00:41:00 | ‘폰세+류현진 vs 앤더슨+화이트’ 리그 1위·2위 선발진 대격돌, 역대급... | ![Image](images/1750985270782__폰세_류현진_vs_앤더슨_화이트___image.jpg) |
 | 2025-06-27 00:27:00 | (Yonhap Interview) On temporary KBO deal, Heroes pitcher Wells trying to ... | ![Image](images/1750985273383__Yonhap_Interview__O_image.jpg) |
+| 2025-06-28 00:42:00 | ‘군대도 현역 다녀왔는데’ 1차지명 특급 우완, 투런포-만루포-솔로포... | ![Image](images/1751071512808__군대도_현역_다녀왔는데__1차지명__image.jpg) |
+| 2025-06-27 05:28:00 | KBO, 2026 신인 드래프트 참가 신청 접수…8월 18일까지 | ![Image](images/1751071515674_KBO__2026_신인_드래프트_참가_image.jpg) |
