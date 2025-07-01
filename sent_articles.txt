@@ -213,3 +213,5 @@ https://m.sports.naver.com/kbaseball/article/001/0015474591
 https://m.sports.naver.com/kbaseball/article/425/0000166992
 https://m.sports.naver.com/kbaseball/article/311/0001885181
 https://n.news.naver.com/mnews/article/003/0013332497
+https://www.nbntv.co.kr/news/articleView.html
+https://n.news.naver.com/mnews/article/092/0002380261
