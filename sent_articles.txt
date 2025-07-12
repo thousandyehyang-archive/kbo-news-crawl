@@ -230,3 +230,5 @@ https://m.sports.naver.com/kbaseball/article/003/0013350568
 https://n.news.naver.com/mnews/article/003/0013353845
 https://www.topstarnews.net/news/articleView.html
 https://n.news.naver.com/mnews/article/003/0013356579
+https://m.sports.naver.com/kbaseball/article/109/0005348346
+https://n.news.naver.com/mnews/article/022/0004050941
