@@ -245,3 +245,5 @@
 | 2025-07-14 00:27:00 | Trio of ex-KBO teammates submit mixed performances in 1st half of MLB sea... | ![Image](images/1752454352102_Trio_of_ex_KBO_teamm_image.jpg) |
 | 2025-07-15 00:46:00 | SKT, Z 폴드7 | Z 플립7 사전예약 개시… 풍성한 혜택 제공 | ![Image](images/1752540677673_SKT__Z_폴드7___Z_플립7_사_image.jpg) |
 | 2025-07-14 05:39:00 | 포카리스웨트, KBO 올스타전 공식 음료 참가 | ![Image](images/1752540680566_포카리스웨트__KBO_올스타전_공식__image.jpg) |
+| 2025-07-16 00:47:00 | '포시냐 코시냐' 김태형 감독이 후반기 롯데 최대 변수?...단기전에 강한... |  |
+| 2025-07-15 13:04:00 | KBO 실행위, 체크스윙 비디오판독 시행 시점 논의…PS 전엔 도입 | ![Image](images/1752627028290_KBO_실행위__체크스윙_비디오판독__image.jpg) |
