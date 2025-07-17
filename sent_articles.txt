@@ -240,3 +240,4 @@ http://www.sisacast.kr/news/articleView.html
 https://n.news.naver.com/mnews/article/031/0000948478
 https://m.sports.naver.com/kbaseball/article/425/0000167856
 https://m.sports.naver.com/kbaseball/article/001/0015509318
+https://n.news.naver.com/mnews/article/003/0013367630
