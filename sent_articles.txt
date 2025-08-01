@@ -263,3 +263,5 @@ https://m.sports.naver.com/kbaseball/article/001/0015534205
 http://www.ttlnews.com/news/articleView.html
 https://m.sports.naver.com/kbaseball/article/119/0002985787
 https://n.news.naver.com/mnews/article/382/0001213522
+https://n.news.naver.com/mnews/article/366/0001097258
+https://n.news.naver.com/mnews/article/001/0015542333
