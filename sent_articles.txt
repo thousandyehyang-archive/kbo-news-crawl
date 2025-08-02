@@ -265,3 +265,5 @@ https://m.sports.naver.com/kbaseball/article/119/0002985787
 https://n.news.naver.com/mnews/article/382/0001213522
 https://n.news.naver.com/mnews/article/366/0001097258
 https://n.news.naver.com/mnews/article/001/0015542333
+https://m.sports.naver.com/kbaseball/article/477/0000562408
+https://n.news.naver.com/mnews/article/001/0015544537
