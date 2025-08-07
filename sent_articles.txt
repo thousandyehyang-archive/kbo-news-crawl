@@ -274,3 +274,5 @@ https://m.sports.naver.com/kbaseball/article/241/0003457379
 https://n.news.naver.com/mnews/article/014/0005387193
 https://n.news.naver.com/mnews/article/001/0015548879
 https://www.ibabynews.com/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/417/0001093979
+https://n.news.naver.com/mnews/article/001/0015552545
