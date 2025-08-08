@@ -283,3 +283,5 @@
 | 2025-08-06 00:50:00 | [편의점뉴스] 세븐일레븐, 이정후 콜라보 상품 인기에 2탄도 선보여 | ![Image](images/1754441518373__편의점뉴스__세븐일레븐__이정후_콜_image.jpg) |
 | 2025-08-07 00:49:00 | 10승과 함께 방출된 데이비슨… 롯데, '외국인 교체'로 승부수 | ![Image](images/1754527949350_10승과_함께_방출된_데이비슨__롯데_image.jpg) |
 | 2025-08-06 08:12:00 | (LEAD) KBO saves leader Oh Seung-hwan to retire after 2025 season | ![Image](images/1754527951962__LEAD__KBO_saves_lea_image.jpg) |
+| 2025-08-08 00:46:00 | '김광현 150승 유니폼·최정 실사용 배트' 경매 나온다! SSG,'랜더스 옥션... | ![Image](images/1754614332804__김광현_150승_유니폼_최정_실사용_image.jpg) |
+| 2025-08-07 12:11:00 | Reigning KBO MVP Kim Do-yeong exits game with hamstring cramp | ![Image](images/1754614334210_Reigning_KBO_MVP_Kim_image.jpeg) |
