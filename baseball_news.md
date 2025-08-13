@@ -293,3 +293,5 @@
 | 2025-08-11 00:22:00 | Struggling KBO contenders set for midweek clash | ![Image](images/1754873610128_Struggling_KBO_conte_image.jpg) |
 | 2025-08-12 00:41:00 | 연일 쾌투하고 있는 폰세, ‘개막 최다 연승 신기록+최소 경기 200K’ 달... | ![Image](images/1754959574302_연일_쾌투하고_있는_폰세___개막_최_image.jpg) |
 | 2025-08-11 08:14:00 | KBO-worst Heroes lose closer for season to elbow injury | ![Image](images/1754959577613_KBO_worst_Heroes_los_image.jpg) |
+| 2025-08-13 00:46:00 | CJ온스타일, 티빙 쇼츠 주문액 월평균 174%↑···&quot;OTT 뚫은 숏폼 커머스... | ![Image](images/1755046060527_CJ온스타일__티빙_쇼츠_주문액_월평_image.jpg) |
+| 2025-08-12 12:46:00 | 한화 폰세, KBO 역대 최소경기 200K &amp;15승 | ![Image](images/1755046066297_한화_폰세__KBO_역대_최소경기_2_image.jpg) |

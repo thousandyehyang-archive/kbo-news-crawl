@@ -286,3 +286,5 @@ https://m.entertain.naver.com/article/076/0004310741
 https://n.news.naver.com/mnews/article/001/0015558432
 https://m.sports.naver.com/kbaseball/article/410/0001083820
 https://n.news.naver.com/mnews/article/001/0015560141
+https://www.ziksir.com/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/421/0008425128
