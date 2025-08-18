@@ -292,3 +292,5 @@ https://n.news.naver.com/mnews/article/001/0015565473
 https://m.sports.naver.com/kbaseball/article/109/0005371764
 https://m.sports.naver.com/kbaseball/article/055/0001284200
 https://m.sports.naver.com/kbaseball/article/410/0001084580
+https://www.slist.kr/news/articleView.html
+https://n.news.naver.com/mnews/article/001/0015570400

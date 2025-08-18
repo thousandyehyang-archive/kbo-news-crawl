@@ -299,3 +299,5 @@
 | 2025-08-16 00:40:00 | ‘첫 20홈런-20도루, WAR 리그 3위’ 송성문, “FA 되면 120억으로도 못... |  |
 | 2025-08-15 05:22:00 | KBO, 프로야구 5개 구장서 광복절 기념 행사 | ![Image](images/1755305072345_KBO__프로야구_5개_구장서_광복절_image.jpg) |
 | 2025-08-17 00:41:00 | ‘ERA 8.05→삭발→98구 역투’ 반등 계기 마련한 NC 신민혁, 벤클 발발... | ![Image](images/1755391945563__ERA_8_05_삭발_98구_역투__image.jpg) |
+| 2025-08-18 00:50:00 | CGV, '야구의 날' 기념 뷰잉파티…허구연·류지현 등 출격 | ![Image](images/1755478341576_CGV___야구의_날__기념_뷰잉파티_image.png) |
+| 2025-08-18 00:01:00 | Mired in late-summer swoon, Giants face crucial week in KBO | ![Image](images/1755478344245_Mired_in_late_summer_image.svg) |
