@@ -301,3 +301,5 @@ https://m.sports.naver.com/kbaseball/article/056/0012012009
 https://m.sports.naver.com/kbaseball/article/410/0001085392
 https://m.sports.naver.com/kbaseball/article/410/0001085671
 https://n.news.naver.com/mnews/article/001/0015579608
+https://m.sports.naver.com/kbaseball/article/410/0001085911
+https://m.sports.naver.com/kbaseball/article/001/0015580020
