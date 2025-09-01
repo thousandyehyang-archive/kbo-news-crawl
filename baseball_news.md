@@ -324,3 +324,5 @@
 | 2025-08-30 00:33:00 | &quot;공 밀려 들어오더라&quot;…4G 3패 'ERA 8.05' 충격 폭등, 데이비슨 대체자 왜... | ![Image](images/1756514433135__quot_공_밀려_들어오더라_quo_image.png) |
 | 2025-08-29 05:36:00 | KBO, 2년 연속 1천만 관중 기념 이미지 공모전 개최 | ![Image](images/1756514437464_KBO__2년_연속_1천만_관중_기념_image.jpg) |
 | 2025-08-31 00:44:00 | KIA 타자들이 안타 1개도 못쳤다…FA 보상선수 대반란, 151km 강속구보다... | ![Image](images/1756601209509_KIA_타자들이_안타_1개도_못쳤다__image.jpg) |
+| 2025-09-01 00:48:00 | 뼈아픈 재역전패도 잊게 한 명장면…세이브왕 박영현 무너뜨린 김규성... | ![Image](images/1756688034975_뼈아픈_재역전패도_잊게_한_명장면_세_image.jpg) |
+| 2025-08-31 23:25:00 | KBO postseason hopefuls face busy week with makeup games on horizon | ![Image](images/1756688037765_KBO_postseason_hopef_image.jpg) |
