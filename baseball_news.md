@@ -328,3 +328,5 @@
 | 2025-08-31 23:25:00 | KBO postseason hopefuls face busy week with makeup games on horizon | ![Image](images/1756688037765_KBO_postseason_hopef_image.jpg) |
 | 2025-09-02 00:37:00 | ‘이게 진짜일 리 없어’ KIA 시계는 촉박, 모래성처럼 무너진 ‘10G ERA... | ![Image](images/1756773826167__이게_진짜일_리_없어__KIA_시계_image.jpg) |
 | 2025-09-01 06:43:00 | '슈퍼 캐치' 박해민·'전역 자축포' 안재석…KBO, 8월 씬-스틸러상 후보... | ![Image](images/1756773828056__슈퍼_캐치__박해민__전역_자축포__image.png) |
+| 2025-09-03 00:36:00 | 外人들도 반했다…'젓국갈비' 들어봤나→김준현 &quot;가끔 이유無 생각나는... |  |
+| 2025-09-02 01:24:00 | 톨허스트에 송성문까지…KBO 8월 월간 MVP 후보 발표 | ![Image](images/1756860048598_톨허스트에_송성문까지_KBO_8월_월_image.jpg) |
