@@ -332,3 +332,5 @@
 | 2025-09-02 01:24:00 | 톨허스트에 송성문까지…KBO 8월 월간 MVP 후보 발표 | ![Image](images/1756860048598_톨허스트에_송성문까지_KBO_8월_월_image.jpg) |
 | 2025-09-04 00:38:00 | 이대형-윤석민 '야구여왕' 여성 야구단 코치 전격 부임 | ![Image](images/1756946466695_이대형_윤석민__야구여왕__여성_야구_image.jpg) |
 | 2025-09-03 14:03:00 | (LEAD) Eagles ace Ponce breaks KBO strikeout record | ![Image](images/1756946470054__LEAD__Eagles_ace_Po_image.jpg) |
+| 2025-09-05 00:41:00 | “보답하고 싶었다”…LG 문성주 맹활약 배경에는 염갈량 믿음 있었다 | ![Image](images/1757032925389__보답하고_싶었다__LG_문성주_맹활_image.jpg) |
+| 2025-09-04 08:22:00 | 프로야구선수협 &quot;선수 SNS 피해 강경 대응&quot;…KBO, 경찰청과 논의(종합) | ![Image](images/1757032927679_프로야구선수협__quot_선수_SNS_image.jpg) |
