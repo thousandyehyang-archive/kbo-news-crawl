@@ -332,3 +332,5 @@ https://m.sports.naver.com/kbaseball/article/001/0015608785
 https://www.kyeongin.com/article/1750939
 https://m.sports.naver.com/kbaseball/article/311/0001914486
 https://n.news.naver.com/mnews/article/001/0015611284
+https://m.sports.naver.com/kbaseball/article/076/0004321289
+https://n.news.naver.com/mnews/article/003/0013467800
