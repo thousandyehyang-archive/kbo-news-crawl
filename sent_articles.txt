@@ -350,3 +350,5 @@ https://m.sports.naver.com/kbaseball/article/468/0001178027
 https://m.sports.naver.com/kbaseball/article/003/0013485579
 https://www.pressman.kr/news/articleView.html
 https://n.news.naver.com/mnews/article/003/0013489431
+https://m.sports.naver.com/kbaseball/article/109/0005395634
+https://m.sports.naver.com/kbaseball/article/001/0015634495
