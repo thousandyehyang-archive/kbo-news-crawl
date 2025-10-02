@@ -373,3 +373,5 @@ https://m.sports.naver.com/general/article/109/0005402583
 https://n.news.naver.com/mnews/article/001/0015656951
 http://theviewers.co.kr/View.aspx
 https://n.news.naver.com/mnews/article/018/0006130227
+https://www.goodkyung.com/news/articleView.html
+https://n.news.naver.com/mnews/article/001/0015662679
