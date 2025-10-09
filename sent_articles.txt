@@ -386,3 +386,5 @@ http://www.dailypop.kr/news/articleView.html
 https://m.sports.naver.com/kbaseball/article/001/0015666902
 https://m.sports.naver.com/kbaseball/article/001/0015667935
 https://n.news.naver.com/mnews/article/001/0015667631
+https://m.sports.naver.com/wbaseball/article/109/0005407017
+https://m.sports.naver.com/kbaseball/article/108/0003372878
