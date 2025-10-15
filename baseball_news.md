@@ -403,3 +403,4 @@
 | 2025-10-13 00:45:00 | 14일 울산으로 전국 야구 유망주 모인다 | ![Image](images/1760316369216_14일_울산으로_전국_야구_유망주_모_image.jpg) |
 | 2025-10-14 00:40:00 | 평가전 4차례 잡은 한화와 다른 준비자세...자체 청백전만 진행하는 LG ... | ![Image](images/1760402544840_평가전_4차례_잡은_한화와_다른_준비_image.jpg) |
 | 2025-10-13 13:45:00 | (LEAD) Lions defeat Landers to grab stranglehold in KBO postseason | ![Image](images/1760402548386__LEAD__Lions_defeat__image.jpg) |
+| 2025-10-14 07:41:00 | Lions slugger Diaz says KBO postseason 'is not about me' | ![Image](images/1760489051344_Lions_slugger_Diaz_s_image.jpg) |
