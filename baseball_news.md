@@ -406,3 +406,5 @@
 | 2025-10-14 07:41:00 | Lions slugger Diaz says KBO postseason 'is not about me' | ![Image](images/1760489051344_Lions_slugger_Diaz_s_image.jpg) |
 | 2025-10-16 00:42:00 | 그렇게 잘던졌는데 왜? '괴물' 폰세와 1차전 맞대결, 어째서 최원태가 ... |  |
 | 2025-10-16 00:17:00 | Battle of aces in opening game of KBO postseason series | ![Image](images/1760575405166_Battle_of_aces_in_op_image.jpg) |
+| 2025-10-17 00:41:00 | ‘2승 7패 ERA 6.58’ 정규리그서 아쉬움 남겼던 한화 엄상백, 가을야구... | ![Image](images/1760661784370__2승_7패_ERA_6_58__정규리_image.jpg) |
+| 2025-10-16 05:02:00 | &quot;삼성vs한화 직관 기회&quot;...쏘카, KBO 포스트시즌 티켓·주차권 쏜다 | ![Image](images/1760661786836__quot_삼성vs한화_직관_기회_q_image.png) |
