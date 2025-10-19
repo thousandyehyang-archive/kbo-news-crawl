@@ -410,3 +410,5 @@
 | 2025-10-16 05:02:00 | &quot;삼성vs한화 직관 기회&quot;...쏘카, KBO 포스트시즌 티켓·주차권 쏜다 | ![Image](images/1760661786836__quot_삼성vs한화_직관_기회_q_image.png) |
 | 2025-10-18 00:30:00 | 김태균, 유리 앞 '10년전 남친' 오승환 언급→분위기 '난처'..무례 발언... | ![Image](images/1760748012903_김태균__유리_앞__10년전_남친___image.jpg) |
 | 2025-10-17 09:56:00 | Opening game of KBO postseason series rained out | ![Image](images/1760748015989_Opening_game_of_KBO__image.png) |
+| 2025-10-19 00:45:00 | &quot;진짜 미쳤다&quot; 공 패대기에 포효까지..'괴물' 본능 일깨운 문동주, 162km... | ![Image](images/1760834981451__quot_진짜_미쳤다_quot__공_image.jpg) |
+| 2025-10-18 03:27:00 | Eagles veteran calls postseason foe 'best team in KBO now' | ![Image](images/1760834983396_Eagles_veteran_calls_image.jpg) |
