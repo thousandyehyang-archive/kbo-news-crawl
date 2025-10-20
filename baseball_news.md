@@ -412,3 +412,5 @@
 | 2025-10-17 09:56:00 | Opening game of KBO postseason series rained out | ![Image](images/1760748015989_Opening_game_of_KBO__image.png) |
 | 2025-10-19 00:45:00 | &quot;진짜 미쳤다&quot; 공 패대기에 포효까지..'괴물' 본능 일깨운 문동주, 162km... | ![Image](images/1760834981451__quot_진짜_미쳤다_quot__공_image.jpg) |
 | 2025-10-18 03:27:00 | Eagles veteran calls postseason foe 'best team in KBO now' | ![Image](images/1760834983396_Eagles_veteran_calls_image.jpg) |
+| 2025-10-20 00:39:00 | '18년만 가을야구' 한화 류현진 vs '부활' 삼성 후라도, 3차전 선발 격돌... | ![Image](images/1760921224305__18년만_가을야구__한화_류현진_v_image.jpg) |
+| 2025-10-19 08:27:00 | Lions beat Eagles to even KBO postseason series | ![Image](images/1760921226725_Lions_beat_Eagles_to_image.jpg) |
