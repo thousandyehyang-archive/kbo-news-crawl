@@ -420,3 +420,4 @@ https://n.news.naver.com/mnews/article/016/0002547722
 https://n.news.naver.com/mnews/article/036/0000052530
 https://m.sports.naver.com/kbaseball/article/117/0004002528
 https://n.news.naver.com/mnews/article/028/0002773044
+https://m.sports.naver.com/kbaseball/article/445/0000359254
