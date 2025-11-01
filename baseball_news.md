@@ -432,3 +432,5 @@
 | 2025-10-28 01:23:00 | 한국시리즈 야구 관람중 쓰러져 병원 이송…허구연 KBO 총재 병원 방문 | ![Image](images/1761785156537_한국시리즈_야구_관람중_쓰러져_병원__image.jpg) |
 | 2025-10-31 00:42:00 | &quot;그 모습은 진짜 보기 싫은데…&quot; 대전 신구장 첫 우승 축포 LG가 쏘나, 한... | ![Image](images/1761871472380__quot_그_모습은_진짜_보기_싫은_image.jpg) |
 | 2025-10-30 11:23:00 | LG 김현수, 포스트시즌 통산 100안타…KBO 역대 두 번째 | ![Image](images/1761871474657_LG_김현수__포스트시즌_통산_100_image.jpg) |
+| 2025-11-01 00:44:00 | 흥행 대폭발 가을 야구, LG 우승 배당금도 역대 최다 | ![Image](images/1761958095098_흥행_대폭발_가을_야구__LG_우승__image.jpg) |
+| 2025-10-31 13:11:00 | With another Korean Series title, Twins open dynasty talk in KBO | ![Image](images/1761958097741_With_another_Korean__image.jpg) |
