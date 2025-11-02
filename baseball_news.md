@@ -434,3 +434,5 @@
 | 2025-10-30 11:23:00 | LG 김현수, 포스트시즌 통산 100안타…KBO 역대 두 번째 | ![Image](images/1761871474657_LG_김현수__포스트시즌_통산_100_image.jpg) |
 | 2025-11-01 00:44:00 | 흥행 대폭발 가을 야구, LG 우승 배당금도 역대 최다 | ![Image](images/1761958095098_흥행_대폭발_가을_야구__LG_우승__image.jpg) |
 | 2025-10-31 13:11:00 | With another Korean Series title, Twins open dynasty talk in KBO | ![Image](images/1761958097741_With_another_Korean__image.jpg) |
+| 2025-11-02 00:41:00 | '미친 타격' 문현빈과 '수비 귀신' 박해민, 이제는 같은 팀 동료 “수비... | ![Image](images/1762044514341__미친_타격__문현빈과__수비_귀신__image.jpg) |
+| 2025-11-01 00:35:00 | 'LG 트윈스' 우승 배당금, KBO 역대 최고액…얼마나 받길래 | ![Image](images/1762044517474__LG_트윈스__우승_배당금__KBO_image.webp) |
