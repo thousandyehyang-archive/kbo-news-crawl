@@ -450,3 +450,5 @@ https://m.sports.naver.com/kbaseball/article/076/0004346540
 https://m.sports.naver.com/kbaseball/article/109/0005431148
 https://n.news.naver.com/mnews/article/020/0003674590
 https://m.sports.naver.com/kbaseball/article/109/0005431711
+http://www.nongaek.com/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/311/0001942544
