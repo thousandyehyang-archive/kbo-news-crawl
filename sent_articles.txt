@@ -452,3 +452,5 @@ https://n.news.naver.com/mnews/article/020/0003674590
 https://m.sports.naver.com/kbaseball/article/109/0005431711
 http://www.nongaek.com/news/articleView.html
 https://m.sports.naver.com/kbaseball/article/311/0001942544
+https://www.wolyo.co.kr/news/articleView.html
+https://m.sports.naver.com/wbaseball/article/001/0015747830
