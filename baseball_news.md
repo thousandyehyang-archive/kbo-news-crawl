@@ -516,3 +516,5 @@
 | 2025-12-16 05:58:00 | Heroes sign all 4 foreign players for 2026 KBO season | ![Image](images/1765932296693_Heroes_sign_all_4_fo_image.jpg) |
 | 2025-12-18 00:42:00 | 폰세 &quot;일본은 힘들었지만, 한국은 12살 아이처럼 행복했다&quot; | ![Image](images/1766018685077_폰세__quot_일본은_힘들었지만___image.jpg) |
 | 2025-12-17 07:41:00 | 'KBO 흥행 열풍' 재미본 티빙, 2026 WBC도 전 경기 '독점 생중계' 나선다 | ![Image](images/1766018687551__KBO_흥행_열풍__재미본_티빙___image.fjpg/) |
+| 2025-12-19 00:46:00 | LG전자, 플래그십 D5서 LG트윈스 우승 기념 팬 사인회 개최 | ![Image](images/1766105378174_LG전자__플래그십_D5서_LG트윈스_image.jpg) |
+| 2025-12-18 05:20:00 | KBO, 2026 새 규정 도입…수비 시프트 위반 제재 강화 | ![Image](images/1766105379793_KBO__2026_새_규정_도입_수비_image.png) |
