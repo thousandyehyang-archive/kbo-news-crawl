@@ -511,3 +511,5 @@ https://m.sports.naver.com/wbaseball/article/437/0000469397
 https://m.sports.naver.com/kbaseball/article/108/0003393002
 https://www.megaeconomy.co.kr/news/newsview.php
 https://m.sports.naver.com/kbaseball/article/001/0015803145
+https://m.sports.naver.com/general/article/422/0000814195
+https://m.sports.naver.com/kbaseball/article/001/0015805459
