@@ -514,3 +514,5 @@ https://m.sports.naver.com/kbaseball/article/001/0015803145
 https://m.sports.naver.com/general/article/422/0000814195
 https://m.sports.naver.com/kbaseball/article/001/0015805459
 https://sports.hankooki.com/news/articleView.html
+https://n.news.naver.com/mnews/article/011/0004570029
+https://n.news.naver.com/mnews/article/087/0001163089
