@@ -526,3 +526,4 @@
 | 2025-12-23 00:47:00 | KBO 출신 폰세는 대박 났는데…'ERA 1점 대' 日 에이스, 1년 550만 달러에... | ![Image](images/1766450970625_KBO_출신_폰세는_대박_났는데__E_image.jpg) |
 | 2025-12-22 20:55:00 | San Diego Padres announce signing of KBO star Song Sung-mun | ![Image](images/1766450973398_San_Diego_Padres_ann_image.jpg) |
 | 2025-12-24 00:40:00 | ‘왕조 시절’ 화수분 야구는 아닙니다만…김택연·박준순 계보 이을 2... | ![Image](images/1766537363170__왕조_시절__화수분_야구는_아닙니다_image.jpeg) |
+| 2025-12-25 00:45:00 | 외인 구성 완료한 한화, '역대급 원투펀치' 폰세·와이스에 작별 인사 | ![Image](images/1766623734295_외인_구성_완료한_한화___역대급_원_image.jpg) |
