@@ -528,3 +528,5 @@ https://m.entertain.naver.com/article/112/0003784752
 https://m.sports.naver.com/kbaseball/article/005/0001822785
 https://m.entertain.naver.com/article/438/0000077468
 https://m.sports.naver.com/kbaseball/article/079/0004100198
+https://m.sports.naver.com/golf/article/109/0005454885
+https://m.entertain.naver.com/article/382/0001245072
