@@ -559,3 +559,5 @@ https://m.sports.naver.com/kbaseball/article/023/0003953477
 https://m.sports.naver.com/wbaseball/article/241/0003489193
 https://m.sports.naver.com/kbaseball/article/241/0003489351
 https://m.sports.naver.com/wbaseball/article/241/0003489348
+https://it.chosun.com/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/108/0003401324
