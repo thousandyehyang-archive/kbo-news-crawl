@@ -602,3 +602,5 @@ https://n.news.naver.com/mnews/article/011/0004590838
 http://www.metroseoul.co.kr/article/20260218500042
 https://n.news.naver.com/mnews/article/468/0001218182
 https://m.sports.naver.com/kbaseball/article/311/0001976331
+https://m.sports.naver.com/kbaseball/article/047/0002505391
+https://n.news.naver.com/mnews/article/092/0002411132
