@@ -622,3 +622,4 @@
 | 2026-02-26 00:52:00 | 오지환의 목표는 ‘박용택 넘기’, “팀 상징 선배가 갈고 닦은 길…넘... | ![Image](images/1772067641801_오지환의_목표는__박용택_넘기_____image.jpg) |
 | 2026-02-27 00:42:00 | 안현민·김도영 동반포, 이정후·김혜성 오면 더 세진다 [2026 WBC] | ![Image](images/1772154067081_안현민_김도영_동반포__이정후_김혜성_image.jpg) |
 | 2026-02-27 00:21:00 | Ex-KBO MVP pleased with progress at plate with WBC on horizon | ![Image](images/1772154070544_Ex_KBO_MVP_pleased_w_image.jpg) |
+| 2026-02-28 00:43:00 | '이정후·김혜성 합류' WBC대표팀, 일본서 최종 평가전 | ![Image](images/1772240115345__이정후_김혜성_합류__WBC대표팀__image.jpg) |
