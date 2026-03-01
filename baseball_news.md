@@ -623,3 +623,5 @@
 | 2026-02-27 00:42:00 | 안현민·김도영 동반포, 이정후·김혜성 오면 더 세진다 [2026 WBC] | ![Image](images/1772154067081_안현민_김도영_동반포__이정후_김혜성_image.jpg) |
 | 2026-02-27 00:21:00 | Ex-KBO MVP pleased with progress at plate with WBC on horizon | ![Image](images/1772154070544_Ex_KBO_MVP_pleased_w_image.jpg) |
 | 2026-02-28 00:43:00 | '이정후·김혜성 합류' WBC대표팀, 일본서 최종 평가전 | ![Image](images/1772240115345__이정후_김혜성_합류__WBC대표팀__image.jpg) |
+| 2026-03-01 01:05:00 | 삼성 진짜 어떡하나, 이호성 팔꿈치 수술 소견→사실상 시즌 아웃…1R 신... | ![Image](images/1772327345093_삼성_진짜_어떡하나__이호성_팔꿈치__image.jpg) |
+| 2026-02-28 01:36:00 | KBO 삼성·LG 구단 관계자들의 잇단 NPB 요미우리 캠프 방문, 왜? | ![Image](images/1772327347887_KBO_삼성_LG_구단_관계자들의_잇_image.png) |

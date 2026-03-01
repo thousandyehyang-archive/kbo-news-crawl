@@ -616,3 +616,5 @@ https://m.sports.naver.com/kbaseball/article/468/0001220039
 http://www.sportsq.co.kr/news/articleView.html
 https://n.news.naver.com/mnews/article/001/0015928257
 https://m.sports.naver.com/kbaseball/article/417/0001131987
+https://m.sports.naver.com/kbaseball/article/477/0000595633
+https://m.sports.naver.com/wbaseball/article/241/0003496700
