@@ -626,3 +626,5 @@ https://n.news.naver.com/mnews/article/092/0002412711
 https://www.newspim.com/news/view/20260305000278
 https://theviewers.co.kr/View.aspx
 https://n.news.naver.com/mnews/article/001/0015941603
+https://www.insight.co.kr/news/545666
+https://m.sports.naver.com/kbaseball/article/001/0015942869
