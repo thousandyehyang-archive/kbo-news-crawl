@@ -635,3 +635,4 @@
 | 2026-03-05 22:39:00 | (WBC) Ex-KBO MVP has good feeling about S. Korean chances vs. Japan | ![Image](images/1772759218350__WBC__Ex_KBO_MVP_has_image.jpg) |
 | 2026-03-07 00:44:00 | 힙한 야구 굿즈의 탄생... 'KBO×국중박' 콜라보로 탄생한 야구 국가대표... | ![Image](images/1772845113667_힙한_야구_굿즈의_탄생_____KBO_image.jpg) |
 | 2026-03-06 06:29:00 | KBO, WBC 대표팀 선전 위해 박물관재단과 컬래버 응원 용품 출시 | ![Image](images/1772845116964_KBO__WBC_대표팀_선전_위해_박_image.jpg) |
+| 2026-03-08 00:57:00 | '부상 여파' 송성문, 외야 멀티 계획 보류 &quot;여러 포지션 맡겨보려고 했... | ![Image](images/1772931766010__부상_여파__송성문__외야_멀티_계_image.jpg) |
