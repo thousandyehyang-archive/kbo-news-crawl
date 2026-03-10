@@ -638,3 +638,5 @@
 | 2026-03-08 00:57:00 | '부상 여파' 송성문, 외야 멀티 계획 보류 &quot;여러 포지션 맡겨보려고 했... | ![Image](images/1772931766010__부상_여파__송성문__외야_멀티_계_image.jpg) |
 | 2026-03-09 00:58:00 | '벼랑 끝' 韓, 8강 기적 쓰면 30억!… 우승하면 112억 잭팟 | ![Image](images/1773018175964__벼랑_끝_____8강_기적_쓰면_3_image.jpg) |
 | 2026-03-08 13:34:00 | (WBC) Australia to start KBO pitcher Wells in crucial game vs. S. Korea |  |
+| 2026-03-10 00:56:00 | 와이스 155km로 KKKKKK 미쳤다, 3이닝 홀드라니…폰세만 ML 역수출 신화... | ![Image](images/1773104268249_와이스_155km로_KKKKKK_미쳤_image.jpg) |
+| 2026-03-09 23:28:00 | &quot;KBO부터 산리오까지&quot; 무신사, 스포츠·IP 전문 '팬스토어' 연다 | ![Image](images/1773104270244__quot_KBO부터_산리오까지_qu_image.jpg) |
