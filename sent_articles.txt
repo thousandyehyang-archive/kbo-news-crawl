@@ -637,3 +637,5 @@ https://www.mhns.co.kr/news/articleView.html
 https://n.news.naver.com/mnews/article/138/0002220318
 https://m.sports.naver.com/kbaseball/article/022/0004112075
 https://n.news.naver.com/mnews/article/003/0013819726
+https://m.sports.naver.com/kbaseball/article/022/0004112677
+https://m.sports.naver.com/wbaseball/article/003/0013821587
