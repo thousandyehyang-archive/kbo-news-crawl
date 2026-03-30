@@ -662,3 +662,5 @@ https://n.news.naver.com/mnews/article/117/0004047970
 https://n.news.naver.com/mnews/article/092/0002416434
 https://m.sports.naver.com/kbaseball/article/109/0005502654
 https://m.sports.naver.com/kbaseball/article/003/0013851458
+https://www.jeonmae.co.kr/news/articleView.html
+https://www.bntnews.co.kr/article/view/bnt202603300086
