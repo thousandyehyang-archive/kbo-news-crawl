@@ -671,3 +671,5 @@ https://n.news.naver.com/mnews/article/003/0013862129
 https://m.sports.naver.com/kbaseball/article/001/0015996972
 https://www.insight.co.kr/news/548689
 https://n.news.naver.com/mnews/article/001/0015999811
+https://n.news.naver.com/mnews/article/008/0005339770
+https://m.sports.naver.com/kbaseball/article/003/0013866047
