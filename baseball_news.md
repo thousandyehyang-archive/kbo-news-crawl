@@ -680,3 +680,4 @@
 | 2026-04-02 12:30:00 | Twins edge out Tigers for 2nd straight win in KBO | ![Image](images/1775178718482_Twins_edge_out_Tiger_image.jpg) |
 | 2026-04-04 01:00:00 | &quot;라이브는 역시 스포츠?&quot;…'BTS' 넷플릭스 주춤·'WBC' 티빙 순항 | ![Image](images/1775264723596__quot_라이브는_역시_스포츠__q_image.jpg) |
 | 2026-04-03 05:28:00 | 2026 KBO 올스타전, 잠실구장 개최 확정…7월 10~11일 개최 | ![Image](images/1775264725153_2026_KBO_올스타전__잠실구장__image.jpg) |
+| 2026-04-05 01:10:00 | 폰세-와이스 급으로 평가되지 않았나…롯데 믿음 와르르, 157-158km 듀오 ... | ![Image](images/1775351644403_폰세_와이스_급으로_평가되지_않았나__image.jpg) |
