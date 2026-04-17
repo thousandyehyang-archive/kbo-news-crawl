@@ -692,3 +692,5 @@ https://n.news.naver.com/mnews/article/421/0008887627
 https://m.sports.naver.com/kbaseball/article/445/0000401761
 https://n.news.naver.com/mnews/article/001/0016021416
 https://m.sports.naver.com/kbaseball/article/108/0003427144
+https://m.sports.naver.com/kbaseball/article/529/0000076994
+https://n.news.naver.com/mnews/article/656/0000174046
