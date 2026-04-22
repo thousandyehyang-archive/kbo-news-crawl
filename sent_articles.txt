@@ -700,3 +700,5 @@ https://m.sports.naver.com/kbaseball/article/003/0013895365
 https://m.sports.naver.com/kbaseball/article/445/0000404434
 https://n.news.naver.com/mnews/article/001/0016030401
 https://m.sports.naver.com/kbaseball/article/117/0004056347
+https://m.sports.naver.com/kbaseball/article/445/0000405164
+https://n.news.naver.com/mnews/article/008/0005347504
