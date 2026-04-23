@@ -702,3 +702,5 @@ https://n.news.naver.com/mnews/article/001/0016030401
 https://m.sports.naver.com/kbaseball/article/117/0004056347
 https://m.sports.naver.com/kbaseball/article/445/0000405164
 https://n.news.naver.com/mnews/article/008/0005347504
+http://www.newslock.co.kr/news/articleView.html
+https://n.news.naver.com/mnews/article/001/0016037469

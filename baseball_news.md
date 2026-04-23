@@ -709,3 +709,5 @@
 | 2026-04-21 01:12:00 | KBO, 동국제약과 마데카 쿨링패치 제품 라인업 확대 출시 | ![Image](images/1776734295543_KBO__동국제약과_마데카_쿨링패치__image.jpg) |
 | 2026-04-22 01:05:00 | '유영찬 역대 최소 경기 10세이브 타이' LG, 한화 꺾고 2연승 질주…리그... | ![Image](images/1776820597644__유영찬_역대_최소_경기_10세이브__image.jpg) |
 | 2026-04-21 23:55:00 | 개막일부터 야구팬 몰렸다…티빙 KBO 중계 이용자 30%↑ | ![Image](images/1776820599746_개막일부터_야구팬_몰렸다_티빙_KBO_image.jpg) |
+| 2026-04-23 01:20:00 | SSG닷컴, 'LAP X KBO' 패션 굿즈 예약 판매 | ![Image](images/1776907307761_SSG닷컴___LAP_X_KBO__패_image.jpg) |
+| 2026-04-23 00:03:00 | Long-time minor leaguer trying to make most of KBO opportunity | ![Image](images/1776907310854_Long_time_minor_leag_image.jpg:large) |
