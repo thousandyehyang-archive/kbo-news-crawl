@@ -711,3 +711,4 @@
 | 2026-04-21 23:55:00 | 개막일부터 야구팬 몰렸다…티빙 KBO 중계 이용자 30%↑ | ![Image](images/1776820599746_개막일부터_야구팬_몰렸다_티빙_KBO_image.jpg) |
 | 2026-04-23 01:20:00 | SSG닷컴, 'LAP X KBO' 패션 굿즈 예약 판매 | ![Image](images/1776907307761_SSG닷컴___LAP_X_KBO__패_image.jpg) |
 | 2026-04-23 00:03:00 | Long-time minor leaguer trying to make most of KBO opportunity | ![Image](images/1776907310854_Long_time_minor_leag_image.jpg:large) |
+| 2026-04-23 11:47:00 | 'KBO 도전' 최지만‥'신생구단 울산 입단' | ![Image](images/1776993684801__KBO_도전__최지만__신생구단_울_image.jpg) |
