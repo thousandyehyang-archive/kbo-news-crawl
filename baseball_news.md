@@ -712,3 +712,5 @@
 | 2026-04-23 01:20:00 | SSG닷컴, 'LAP X KBO' 패션 굿즈 예약 판매 | ![Image](images/1776907307761_SSG닷컴___LAP_X_KBO__패_image.jpg) |
 | 2026-04-23 00:03:00 | Long-time minor leaguer trying to make most of KBO opportunity | ![Image](images/1776907310854_Long_time_minor_leag_image.jpg:large) |
 | 2026-04-23 11:47:00 | 'KBO 도전' 최지만‥'신생구단 울산 입단' | ![Image](images/1776993684801__KBO_도전__최지만__신생구단_울_image.jpg) |
+| 2026-04-25 01:06:00 | 부상 때문에 아쉬움 삼킨 리빙 레전드, 올해는 문제 없다…&quot;몸 상태 너... | ![Image](images/1777079675156_부상_때문에_아쉬움_삼킨_리빙_레전드_image.jpg) |
+| 2026-04-24 05:19:00 | 롯데웰푸드, KBO 협업 제품 출시...‘과자 올스타전’ 연다 | ![Image](images/1777079677308_롯데웰푸드__KBO_협업_제품_출시__image.jpg) |
