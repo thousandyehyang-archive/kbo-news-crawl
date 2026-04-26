@@ -707,3 +707,5 @@ https://n.news.naver.com/mnews/article/001/0016037469
 https://m.sports.naver.com/kbaseball/article/214/0001494824
 https://m.sports.naver.com/kbaseball/article/311/0002003475
 https://n.news.naver.com/mnews/article/011/0004614352
+http://www.ftoday.co.kr/news/articleView.html
+https://n.news.naver.com/mnews/article/001/0016042838
