@@ -730,3 +730,4 @@
 | 2026-05-04 01:09:00 | Surging Giants to take on KBO-leading Wiz | ![Image](images/1777858123819_Surging_Giants_to_ta_image.jpg) |
 | 2026-05-05 01:26:00 | 문동주마저 시즌 아웃, 한화의 미래 구상이 흔들린다 | ![Image](images/1777944520326_문동주마저_시즌_아웃__한화의_미래__image.png) |
 | 2026-05-04 23:00:00 | '중계권 청탁' 대가로 금품수수한 KBO 임원, 2심에서도 무죄 | ![Image](images/1777944523982__중계권_청탁__대가로_금품수수한_K_image.jpg) |
+| 2026-05-06 01:25:00 | SSG 박성한·KIA 올러, 3∼4월 WAR 1위…KBO상 수상 | ![Image](images/1778030859105_SSG_박성한_KIA_올러__3_4월_image.jpg) |
