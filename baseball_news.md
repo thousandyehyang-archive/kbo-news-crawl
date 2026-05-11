@@ -739,3 +739,4 @@
 | 2026-05-08 07:12:00 | KBO &quot;국고보조사업 부정수급 없어…내부 규정은 재정비&quot; | ![Image](images/1778291070864_KBO__quot_국고보조사업_부정수_image.png) |
 | 2026-05-10 01:42:00 | KBO 롯데 출신 반즈, 다저스에서 김혜성과 한솥밥 | ![Image](images/1778377511022_KBO_롯데_출신_반즈__다저스에서__image.jpg) |
 | 2026-05-09 20:30:00 | MZ女가 바꾼 KBO ‘1200만 법칙’…승패보다 뜨거운 ‘응원 경제학’ [권... | ![Image](images/1778377514877_MZ_가_바꾼_KBO__1200만_법_image.jpg) |
+| 2026-05-11 01:19:00 | Lions riding 7-game winning streak into big series vs. Twins in KBO | ![Image](images/1778464341337_Lions_riding_7_game__image.jpg) |
