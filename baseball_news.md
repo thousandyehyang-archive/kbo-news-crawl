@@ -740,3 +740,5 @@
 | 2026-05-10 01:42:00 | KBO 롯데 출신 반즈, 다저스에서 김혜성과 한솥밥 | ![Image](images/1778377511022_KBO_롯데_출신_반즈__다저스에서__image.jpg) |
 | 2026-05-09 20:30:00 | MZ女가 바꾼 KBO ‘1200만 법칙’…승패보다 뜨거운 ‘응원 경제학’ [권... | ![Image](images/1778377514877_MZ_가_바꾼_KBO__1200만_법_image.jpg) |
 | 2026-05-11 01:19:00 | Lions riding 7-game winning streak into big series vs. Twins in KBO | ![Image](images/1778464341337_Lions_riding_7_game__image.jpg) |
+| 2026-05-12 01:47:00 | 5월 20일. '2군 선두' 울산 이적시장 오픈! → 이적료 단돈 3000만원 거저... | ![Image](images/1778550468053_5월_20일___2군_선두__울산_이_image.jpg) |
+| 2026-05-11 07:14:00 | '개막 22경기 연속 안타' SSG 박성한, 개인 첫 KBO 월간 MVP | ![Image](images/1778550470547__개막_22경기_연속_안타__SSG__image.jpg) |
