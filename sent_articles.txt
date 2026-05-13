@@ -735,3 +735,5 @@ https://n.news.naver.com/mnews/article/022/0004126937
 https://n.news.naver.com/mnews/article/001/0016068957
 https://m.sports.naver.com/general/article/076/0004404444
 https://m.sports.naver.com/kbaseball/article/001/0016070242
+https://www.startuptoday.co.kr/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/003/0013940680
