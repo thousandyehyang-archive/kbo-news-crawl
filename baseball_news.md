@@ -748,3 +748,4 @@
 | 2026-05-16 01:43:00 | ‘이렇게 착한 선수가’ 5OUT도 거뜬한 클로저 됐는데, 자리 욕심 NO→원... | ![Image](images/1778895984356__이렇게_착한_선수가__5OUT도_거_image.jpg) |
 | 2026-05-15 07:19:00 | 허구연 KBO 총재, 주한 도미니카공화국 대사와 야구 교류 논의 | ![Image](images/1778895987135_허구연_KBO_총재__주한_도미니카공_image.jpg) |
 | 2026-05-17 01:39:00 | 엄지영, “생각 짧았다” 애국가 제창 논란 결국 사과 [전문] | ![Image](images/1778982625727_엄지영___생각_짧았다__애국가_제창_image.jpg) |
+| 2026-05-18 00:16:00 | Clubs vying for top spot in KBO set for midweek duel | ![Image](images/1779069571312_Clubs_vying_for_top__image.jpg) |
