@@ -749,3 +749,5 @@
 | 2026-05-15 07:19:00 | 허구연 KBO 총재, 주한 도미니카공화국 대사와 야구 교류 논의 | ![Image](images/1778895987135_허구연_KBO_총재__주한_도미니카공_image.jpg) |
 | 2026-05-17 01:39:00 | 엄지영, “생각 짧았다” 애국가 제창 논란 결국 사과 [전문] | ![Image](images/1778982625727_엄지영___생각_짧았다__애국가_제창_image.jpg) |
 | 2026-05-18 00:16:00 | Clubs vying for top spot in KBO set for midweek duel | ![Image](images/1779069571312_Clubs_vying_for_top__image.jpg) |
+| 2026-05-19 01:58:00 | 43세 최형우 &quot;선수로 1등 못해도, 이런 좋은 기운이라도 있어야지&quot; | ![Image](images/1779155985588_43세_최형우__quot_선수로_1등_image.jpg) |
+| 2026-05-19 01:39:00 | ADT캡스, KBO '월간 캡스플레이' 첫 수상자로 두산 정수빈 선정 | ![Image](images/1779155988605_ADT캡스__KBO__월간_캡스플레이_image.jpg) |
