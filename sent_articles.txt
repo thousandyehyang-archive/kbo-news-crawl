@@ -746,3 +746,5 @@ https://m.sports.naver.com/kbaseball/article/241/0003510867
 https://n.news.naver.com/mnews/article/015/0005288593
 https://www.asiatoday.co.kr/kn/view.php
 https://m.sports.naver.com/kbaseball/article/081/0003645285
+https://n.news.naver.com/mnews/article/092/0002423726
+https://n.news.naver.com/mnews/article/008/0005360554
