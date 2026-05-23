@@ -757,3 +757,5 @@
 | 2026-05-20 05:38:00 | &quot;이대호·오승환 찾자&quot;…세븐일레븐, 'KBO 컬렉션 카드' 출시 | ![Image](images/1779328716877__quot_이대호_오승환_찾자_quo_image.jpg) |
 | 2026-05-22 01:58:00 | 아니 형이 왜? 이태형 카즈하 꿈 바사삭…오승환 떴다 (우리동네 야구대... |  |
 | 2026-05-21 12:45:00 | KBO tops 4 mln fans in fewest games | ![Image](images/1779415216153_KBO_tops_4_mln_fans__image.jpg) |
+| 2026-05-23 01:44:00 | &quot;건방 떠는 순간 끝&quot; KIA 제2의 최형우 키웠다, 육성선수 초대박 기대해... | ![Image](images/1779501059486__quot_건방_떠는_순간_끝_quo_image.jpg) |
+| 2026-05-22 23:00:00 | 'I've always believed I could hit': ex-MLB slugger Hiura ready to showcas... | ![Image](images/1779501061450__I_ve_always_believe_image.jpg) |
