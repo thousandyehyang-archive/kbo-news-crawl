@@ -759,3 +759,4 @@
 | 2026-05-21 12:45:00 | KBO tops 4 mln fans in fewest games | ![Image](images/1779415216153_KBO_tops_4_mln_fans__image.jpg) |
 | 2026-05-23 01:44:00 | &quot;건방 떠는 순간 끝&quot; KIA 제2의 최형우 키웠다, 육성선수 초대박 기대해... | ![Image](images/1779501059486__quot_건방_떠는_순간_끝_quo_image.jpg) |
 | 2026-05-22 23:00:00 | 'I've always believed I could hit': ex-MLB slugger Hiura ready to showcas... | ![Image](images/1779501061450__I_ve_always_believe_image.jpg) |
+| 2026-05-24 01:46:00 | 최고 151km+2800RPM 슬라이더…필라델피아 사로잡은 광주일고 에이스 | ![Image](images/1779587833652_최고_151km_2800RPM_슬라이_image.jpg) |
