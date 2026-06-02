@@ -774,3 +774,5 @@
 | 2026-05-31 02:03:00 | [MD포토] 임찬규 '최강 LG 투수조 훈련 출발' | ![Image](images/1780193108030__MD포토__임찬규__최강_LG_투수_image.jpg) |
 | 2026-06-01 02:11:00 | '월드컵의 해' 세 번 우승했는데…'12연패' SSG, 날개 잃은 추락 | ![Image](images/1780280025938__월드컵의_해__세_번_우승했는데___image.jpg) |
 | 2026-06-01 00:49:00 | Landers looking to snap 12-game slide in KBO during 6-game home stand | ![Image](images/1780280029088_Landers_looking_to_s_image.jpg) |
+| 2026-06-02 02:12:00 | “오늘도 질 것 같다”⋯12연패 SSG가 빠진 악순환 | ![Image](images/1780366453594__오늘도_질_것_같다__12연패_SS_image.jpg) |
+| 2026-06-01 07:23:00 | 젠슨 황, 韓 기업인들과 성수서 ‘삼겹살 소맥’ 회동할 듯… KBO 시구 가... | ![Image](images/1780366456596_젠슨_황____기업인들과_성수서__삼_image.jpg) |

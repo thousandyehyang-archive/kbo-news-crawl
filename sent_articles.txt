@@ -767,3 +767,5 @@ https://m.sports.naver.com/kbaseball/article/001/0016107971
 https://m.sports.naver.com/kbaseball/article/117/0004069910
 https://m.sports.naver.com/kbaseball/article/421/0008977379
 https://n.news.naver.com/mnews/article/001/0016111040
+https://www.etoday.co.kr/news/view/2589915
+https://n.news.naver.com/mnews/article/366/0001168621
