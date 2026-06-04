@@ -777,3 +777,5 @@
 | 2026-06-02 02:12:00 | “오늘도 질 것 같다”⋯12연패 SSG가 빠진 악순환 | ![Image](images/1780366453594__오늘도_질_것_같다__12연패_SS_image.jpg) |
 | 2026-06-01 07:23:00 | 젠슨 황, 韓 기업인들과 성수서 ‘삼겹살 소맥’ 회동할 듯… KBO 시구 가... | ![Image](images/1780366456596_젠슨_황____기업인들과_성수서__삼_image.jpg) |
 | 2026-06-03 02:24:00 | KBO-leading Twins sign new pitcher Rios, cut Chirinos | ![Image](images/1780453937684_KBO_leading_Twins_si_image.jpg) |
+| 2026-06-04 02:27:00 | 치킨 끊으니 야구가 잘 된다…박진만 감독도 인정한 '양우현 성장' [대구... | ![Image](images/1780540151625_치킨_끊으니_야구가_잘_된다_박진만__image.jpg) |
+| 2026-06-03 23:18:00 | KBO reaches 5 mln fans in record-breaking fashion | ![Image](images/1780540154491_KBO_reaches_5_mln_fa_image.jpg) |
