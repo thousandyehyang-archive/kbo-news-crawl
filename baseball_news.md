@@ -779,3 +779,5 @@
 | 2026-06-03 02:24:00 | KBO-leading Twins sign new pitcher Rios, cut Chirinos | ![Image](images/1780453937684_KBO_leading_Twins_si_image.jpg) |
 | 2026-06-04 02:27:00 | 치킨 끊으니 야구가 잘 된다…박진만 감독도 인정한 '양우현 성장' [대구... | ![Image](images/1780540151625_치킨_끊으니_야구가_잘_된다_박진만__image.jpg) |
 | 2026-06-03 23:18:00 | KBO reaches 5 mln fans in record-breaking fashion | ![Image](images/1780540154491_KBO_reaches_5_mln_fa_image.jpg) |
+| 2026-06-05 01:50:00 | 이대호 설욕할까…불꽃 파이터즈, 롯데 퓨처스와 재격돌 | ![Image](images/1780625010437_이대호_설욕할까_불꽃_파이터즈__롯데_image.jpg) |
+| 2026-06-04 08:15:00 | 롯데 김태형 감독, KBO 역대 7번째 800승에 1승 남아 |  |
