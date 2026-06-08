@@ -777,3 +777,5 @@ https://m.sports.naver.com/kbaseball/article/003/0013987808
 https://m.sports.naver.com/kbaseball/article/410/0001127696
 https://m.sports.naver.com/kbaseball/article/657/0000052189
 https://m.entertain.naver.com/article/410/0001127733
+https://www.jnilbo.com/news/articleView.html
+https://n.news.naver.com/mnews/article/023/0003980662
