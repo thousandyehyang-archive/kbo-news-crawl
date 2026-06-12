@@ -792,3 +792,5 @@
 | 2026-06-09 12:59:00 | AG 야구대표팀 명단 발표 앞둔 KBO·KBSA, 새 BI 발표 | ![Image](images/1781057006815_AG_야구대표팀_명단_발표_앞둔_KB_image.jpg) |
 | 2026-06-11 02:11:00 | ﻿[전문가 칼럼] AI는 얼마나 정확해야 하는가…KBO와 MLB의 엇갈린 선택... | ![Image](images/1781144082201___전문가_칼럼__AI는_얼마나_정확_image.jpg) |
 | 2026-06-10 06:38:00 | KBO 사무국, 아시안게임 야구 대표팀 명단 발표 생중계 | ![Image](images/1781144083638_KBO_사무국__아시안게임_야구_대표_image.jpg) |
+| 2026-06-12 02:09:00 | ‘이용규 음주운전 사고’ KBO “구단 경위서 아직, 받은 뒤 상벌위 개최... | ![Image](images/1781230223983__이용규_음주운전_사고__KBO__구_image.jpg) |
+| 2026-06-11 05:27:00 | Ex-KBO MVP Kim Do-yeong headlines Asian Games baseball roster | ![Image](images/1781230227178_Ex_KBO_MVP_Kim_Do_ye_image.jpeg) |
