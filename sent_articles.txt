@@ -787,3 +787,5 @@ https://n.news.naver.com/mnews/article/138/0002230562
 https://m.sports.naver.com/kbaseball/article/001/0016131097
 https://m.sports.naver.com/kbaseball/article/396/0000746667
 https://n.news.naver.com/mnews/article/001/0016133335
+http://www.stoo.com/article.php
+https://n.news.naver.com/mnews/article/001/0016136495
