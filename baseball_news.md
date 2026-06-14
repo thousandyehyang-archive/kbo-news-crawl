@@ -796,3 +796,5 @@
 | 2026-06-11 05:27:00 | Ex-KBO MVP Kim Do-yeong headlines Asian Games baseball roster | ![Image](images/1781230227178_Ex_KBO_MVP_Kim_Do_ye_image.jpeg) |
 | 2026-06-13 01:44:00 | 한화를 한국시리즈로 이끌었던 와이스, 부진 끝에 휴스턴서 방출 대기 | ![Image](images/1781316189258_한화를_한국시리즈로_이끌었던_와이스__image.jpg) |
 | 2026-06-12 09:30:00 | Ex-KBO All-Star Lee Yong-kyu retires after DUI accident | ![Image](images/1781316193360_Ex_KBO_All_Star_Lee__image.jpg) |
+| 2026-06-14 02:04:00 | KIA, 데일 공백 잘 메웠지만…'홈런타자' 아데를린 이탈은 크다 | ![Image](images/1781403236146_KIA__데일_공백_잘_메웠지만__홈_image.jpg) |
+| 2026-06-13 21:07:00 | “프로야구? 잘해서 보러 가겠어요?”...KBO구단은 MZ마케팅 9단 [Book] | ![Image](images/1781403236999__프로야구__잘해서_보러_가겠어요___image.jpg) |
