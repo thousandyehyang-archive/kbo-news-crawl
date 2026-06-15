@@ -791,3 +791,4 @@ http://www.stoo.com/article.php
 https://n.news.naver.com/mnews/article/001/0016136495
 https://m.sports.naver.com/kbaseball/article/421/0009002280
 https://n.news.naver.com/mnews/article/009/0005693412
+https://www.bntnews.co.kr/article/view/bnt202606150005
