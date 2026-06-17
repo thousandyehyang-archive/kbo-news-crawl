@@ -794,3 +794,5 @@ https://n.news.naver.com/mnews/article/009/0005693412
 https://www.bntnews.co.kr/article/view/bnt202606150005
 https://m.sports.naver.com/kbaseball/article/076/0004415969
 https://n.news.naver.com/mnews/article/002/0002445121
+https://m.sports.naver.com/kbaseball/article/117/0004075506
+https://m.sports.naver.com/kbaseball/article/055/0001364772
