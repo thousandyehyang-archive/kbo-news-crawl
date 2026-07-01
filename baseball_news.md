@@ -824,3 +824,5 @@
 | 2026-06-29 00:55:00 | KBO teams in middle of standings trying to make late first-half push | ![Image](images/1782698832436_KBO_teams_in_middle__image.php) |
 | 2026-06-30 01:58:00 | 컴투스, '2026 KBO 올스타전 홈런더비' 공식 스폰서 참여…5년 연속 동행 | ![Image](images/1782784912881_컴투스___2026_KBO_올스타전__image.jpg) |
 | 2026-06-30 01:44:00 | KBO 올스타전 홈런더비 투표 시작 | ![Image](images/1782784916440_KBO_올스타전_홈런더비_투표_시작_image.jpg) |
+| 2026-07-01 02:03:00 | '역사상 가장 빠른 구속' 괴물 투수와 리빙 레전드의 낭만 리스펙, 그런... | ![Image](images/1782871624082__역사상_가장_빠른_구속__괴물_투수_image.jpg) |
+| 2026-06-30 03:00:00 | KBO 올스타전 맞춰 10개 구단 기념우표 나온다 | ![Image](images/1782871627677_KBO_올스타전_맞춰_10개_구단_기_image.jpg) |
