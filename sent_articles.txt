@@ -828,3 +828,5 @@ https://m.sports.naver.com/kbaseball/article/109/0005566091
 https://www.hg-times.com/news/articleView.html
 https://m.sports.naver.com/kbaseball/article/001/0016177453
 https://m.sports.naver.com/kbaseball/article/001/0016178208
+http://www.lawissue.co.kr/view.php
+https://m.sports.naver.com/kbaseball/article/109/0005567418
