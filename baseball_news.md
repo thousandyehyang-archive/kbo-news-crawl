@@ -838,3 +838,5 @@
 | 2026-07-08 01:20:00 | 컴투스, 올스타전에서 홈런더비·리듬게임 현장 이벤트 개최 | ![Image](images/1783473688129_컴투스__올스타전에서_홈런더비_리듬게_image.jpg) |
 | 2026-07-07 12:02:00 | [사진] 최형우, KBO 최초 1800타점 | ![Image](images/1783473690255__사진__최형우__KBO_최초_180_image.jpg) |
 | 2026-07-08 01:02:00 | 컴투스, KBO 올스타전 달군다…홈런더비부터 팬 체험까지 '야구 축제' 총... | ![Image](images/1783560595205_컴투스__KBO_올스타전_달군다_홈런_image.jpg) |
+| 2026-07-10 01:26:00 | 넷마블 '마구마구 2026' 불꽃야구2 컬래버 진행 | ![Image](images/1783646851238_넷마블__마구마구_2026__불꽃야구_image.jpg) |
+| 2026-07-10 00:06:00 | Lions, Twins neck and neck in race for top spot as KBO enters midseason b... | ![Image](images/1783646853761_Lions__Twins_neck_an_image.jpg) |
