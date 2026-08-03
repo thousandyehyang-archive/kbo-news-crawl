@@ -878,3 +878,4 @@
 | 2026-08-01 01:25:00 | MLB 112승 LG 새 외인 드디어 오늘 출격, &quot;카라스코 역할 가장 중요&quot; | ![Image](images/1785547673591_MLB_112승_LG_새_외인_드디어_image.jpg) |
 | 2026-08-01 00:23:00 | 15년 만에 최소…3건 성사되고 문 닫은 2026 KBO 트레이드 시장 | ![Image](images/1785547678142_15년_만에_최소_3건_성사되고_문__image.jpg) |
 | 2026-08-01 06:46:00 | &quot;덥다, 더워&quot; 폭염에 야구도 멈췄다…KBO '결단' | ![Image](images/1785633935533__quot_덥다__더워_quot__폭_image.jpg) |
+| 2026-08-02 23:59:00 | Red-hot KT Wiz looking to extend lead atop KBO standings |  |
