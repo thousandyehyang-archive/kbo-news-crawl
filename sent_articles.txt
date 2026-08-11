@@ -884,3 +884,5 @@ https://m.sports.naver.com/kbaseball/article/076/0004433996
 https://m.sports.naver.com/kbaseball/article/109/0005585500
 https://n.news.naver.com/mnews/article/001/0016240518
 https://m.sports.naver.com/kbaseball/article/076/0004434419
+https://www.gokorea.kr/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/001/0016243160
