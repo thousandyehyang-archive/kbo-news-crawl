@@ -906,3 +906,5 @@
 | 2026-08-16 23:34:00 | 침통한 표정의 허구연 KBO 총재 | ![Image](images/1786926613621_침통한_표정의_허구연_KBO_총재_image.jpg) |
 | 2026-08-19 00:29:00 | 오스틴 영구결번 '팀 퍼스트' LG서 버틴 것 만으로도 자격 충분, 그러나... | ![Image](images/1787099394889_오스틴_영구결번__팀_퍼스트__LG서_image.jpg) |
 | 2026-08-17 07:24:00 | '4할 타자' 백인천 전 감독 영면…KBO장으로 마지막 배웅 | ![Image](images/1787099398301__4할_타자__백인천_전_감독_영면__image.jpg) |
+| 2026-08-20 00:24:00 | 키움증권, 22일 고척돔서 ‘파트너데이’ 개최…유니폼 증정 등 진행 | ![Image](images/1787185821187_키움증권__22일_고척돔서__파트너데_image.jpg) |
+| 2026-08-20 00:07:00 | New Twins pitcher Kennedy pumped to play before big crowds in KBO | ![Image](images/1787185823761_New_Twins_pitcher_Ke_image.jpg) |
