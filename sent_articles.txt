@@ -901,3 +901,5 @@ https://m.sports.naver.com/general/article/445/0000452010
 https://n.news.naver.com/mnews/article/448/0000633934
 https://www.viva100.com/article/20260820500209
 https://n.news.naver.com/mnews/article/001/0016260196
+https://n.news.naver.com/mnews/article/001/0016262857
+https://n.news.naver.com/mnews/article/001/0016262749
