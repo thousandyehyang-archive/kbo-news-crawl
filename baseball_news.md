@@ -912,3 +912,4 @@
 | 2026-08-20 23:34:00 | (Yonhap Interview) Wiz pitcher Allen thriving in 2nd chance in KBO: 'In a... | ![Image](images/1787272419061__Yonhap_Interview__W_image.jpg) |
 | 2026-08-22 00:20:00 | 솔로포→만루포 '쾅쾅', 투혼의 슬라이딩까지…롯데 5연승 이끈 6타점 맹... | ![Image](images/1787358602559_솔로포_만루포__쾅쾅___투혼의_슬라_image.jpg) |
 | 2026-08-21 07:44:00 | KBO, 한국야구 명예의 전당 선정위원회 출범 | ![Image](images/1787358605158_KBO__한국야구_명예의_전당_선정위_image.jpg) |
+| 2026-08-23 00:18:00 | &quot;이상하네, 라팍이 더 편한데…&quot; 집 나가면 '불패' 구원왕의 항변, &quot;위험... | ![Image](images/1787445167160__quot_이상하네__라팍이_더_편한_image.jpg) |
