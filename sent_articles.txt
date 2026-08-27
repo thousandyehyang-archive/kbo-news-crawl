@@ -911,3 +911,5 @@ https://m.sports.naver.com/kbaseball/article/445/0000454981
 https://www.etoday.co.kr/news/view/2617732
 https://www.cstimes.com/news/articleView.html
 https://n.news.naver.com/mnews/article/421/0009132633
+https://m.sports.naver.com/kbaseball/article/311/0002050201
+https://m.sports.naver.com/kbaseball/article/410/0001137556
