@@ -926,3 +926,5 @@
 | 2026-08-30 01:45:00 | 'ERA 1.65' 상대팀 벌벌 떤다…'KIA 타선 또 봉쇄' ML 경력자의 힘 대단하... | ![Image](images/1788055212657__ERA_1_65__상대팀_벌벌_떤다_image.jpg) |
 | 2026-08-31 01:55:00 | '나이 묻지마세요' 슈어저, 시애틀전 선발 등판 7이닝 10K…카메론은 결... | ![Image](images/1788141367955__나이_묻지마세요__슈어저__시애틀전_image.jpg) |
 | 2026-08-31 00:03:00 | KBO's Seoul rivals set for final 3-game series at historic stadium | ![Image](images/1788141371680_KBO_s_Seoul_rivals_s_image.jpg) |
+| 2026-09-01 02:16:00 | [포토S] 최병용, '2027 트라이아웃 참가' | ![Image](images/1788229080890__포토S__최병용___2027_트라이_image.jpg) |
+| 2026-09-01 01:28:00 | (LEAD) Pitcher Go Woo-suk reunites with ex-KBO team after short MLB stint | ![Image](images/1788229084339__LEAD__Pitcher_Go_Wo_image.jpg) |
