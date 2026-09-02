@@ -921,3 +921,5 @@ https://m.sports.naver.com/wbaseball/article/117/0004100028
 https://n.news.naver.com/mnews/article/001/0016279385
 https://m.sports.naver.com/kbaseball/article/477/0000625935
 https://n.news.naver.com/mnews/article/001/0016281841
+https://m.sports.naver.com/kbaseball/article/654/0000198329
+https://m.sports.naver.com/kbaseball/article/001/0016282646

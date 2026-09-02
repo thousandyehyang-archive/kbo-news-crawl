@@ -928,3 +928,5 @@
 | 2026-08-31 00:03:00 | KBO's Seoul rivals set for final 3-game series at historic stadium | ![Image](images/1788141371680_KBO_s_Seoul_rivals_s_image.jpg) |
 | 2026-09-01 02:16:00 | [포토S] 최병용, '2027 트라이아웃 참가' | ![Image](images/1788229080890__포토S__최병용___2027_트라이_image.jpg) |
 | 2026-09-01 01:28:00 | (LEAD) Pitcher Go Woo-suk reunites with ex-KBO team after short MLB stint | ![Image](images/1788229084339__LEAD__Pitcher_Go_Wo_image.jpg) |
+| 2026-09-02 01:36:00 | 고우석, LG 복귀 확정…1년 5억원 계약·올해 가을야구는 못 뛴다 |  |
+| 2026-09-01 04:30:00 | KBO 신인드래프트 트라이아웃 테스트 | ![Image](images/1788313193145_KBO_신인드래프트_트라이아웃_테스트_image.jpg) |
