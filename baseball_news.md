@@ -930,3 +930,5 @@
 | 2026-09-01 01:28:00 | (LEAD) Pitcher Go Woo-suk reunites with ex-KBO team after short MLB stint | ![Image](images/1788229084339__LEAD__Pitcher_Go_Wo_image.jpg) |
 | 2026-09-02 01:36:00 | 고우석, LG 복귀 확정…1년 5억원 계약·올해 가을야구는 못 뛴다 |  |
 | 2026-09-01 04:30:00 | KBO 신인드래프트 트라이아웃 테스트 | ![Image](images/1788313193145_KBO_신인드래프트_트라이아웃_테스트_image.jpg) |
+| 2026-09-03 01:43:00 | 수비하는 강백호? 올해는 못 본다…2027년엔 외야수? 내야수? 김경문 구... | ![Image](images/1788399906499_수비하는_강백호__올해는_못_본다_2_image.png) |
+| 2026-09-02 12:56:00 | Twins beat Seoul rivals Bears for 2nd straight game in KBO | ![Image](images/1788399909413_Twins_beat_Seoul_riv_image.jpg) |
