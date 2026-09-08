@@ -940,3 +940,5 @@
 | 2026-09-05 11:36:00 | '나성범 쐐기포' KIA, 이틀 연속 선두 kt 격파 | ![Image](images/1788658435130__나성범_쐐기포__KIA__이틀_연속_image.jpg) |
 | 2026-09-07 01:30:00 | &quot;내 승리보다 팀 승리가 먼저&quot;... KIA 양현종이 12시즌 연속 10승 찍고 남... | ![Image](images/1788744754983__quot_내_승리보다_팀_승리가_먼_image.jpg) |
 | 2026-09-06 22:54:00 | Dinos making another late push for KBO postseason berth | ![Image](images/1788744757739_Dinos_making_another_image.jpg) |
+| 2026-09-08 01:41:00 | 천하의 안우진도 3년 공백은 길었나, 휴식차 1군 말소→4번째 전력 이탈... | ![Image](images/1788831759790_천하의_안우진도_3년_공백은_길었나__image.jpg) |
+| 2026-09-07 07:57:00 | KIA 김도영, 두산 곽빈 제치고 KBO리그 8월 MVP 선정 | ![Image](images/1788831762857_KIA_김도영__두산_곽빈_제치고_K_image.jpg) |
