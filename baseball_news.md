@@ -953,3 +953,5 @@
 | 2026-09-12 12:04:00 | KBO reaches 11 mln fans in record-setting fashion, closes in on all-time ... | ![Image](images/1789263682302_KBO_reaches_11_mln_f_image.jpg) |
 | 2026-09-14 01:48:00 | '페라자보다 좋은 외인 없으면 그냥 간다?' 한화, 다시 하위권인데 현상... | ![Image](images/1789351163071__페라자보다_좋은_외인_없으면_그냥__image.jpg) |
 | 2026-09-13 10:00:00 | KIA 김도영, KBO 최연소 40홈런-100타점-100득점 | ![Image](images/1789351166557_KIA_김도영__KBO_최연소_40홈_image.jpg) |
+| 2026-09-15 01:50:00 | KBO리그 배우러 온 日 요미우리, 마케팅 및 리그 운영 논의 | ![Image](images/1789438064132_KBO리그_배우러_온___요미우리___image.jpg) |
+| 2026-09-15 01:49:00 | 일본 요미우리, KBO와 마케팅 전략·운영 시스템 관련 논의 | ![Image](images/1789438067517_일본_요미우리__KBO와_마케팅_전략_image.jpg) |
