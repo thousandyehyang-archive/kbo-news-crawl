@@ -987,3 +987,5 @@ https://m.entertain.naver.com/article/119/0003139462
 https://m.sports.naver.com/kbaseball/article/144/0001142179
 https://www.newspim.com/news/view/20261006000747
 https://n.news.naver.com/mnews/article/001/0016358179
+https://m.sports.naver.com/kbaseball/article/001/0016362319
+https://m.sports.naver.com/kbaseball/article/108/0003476664
