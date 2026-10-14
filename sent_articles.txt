@@ -999,3 +999,5 @@ http://www.bizwnews.com/news/articleView.html
 https://www.bntnews.co.kr/article/view/bnt202610120154
 https://m.sports.naver.com/kbaseball/article/425/0000210836
 https://n.news.naver.com/mnews/article/009/0005747698
+https://m.sports.naver.com/kbaseball/article/139/0002254455
+https://www.etoday.co.kr/news/view/2635594
