@@ -1008,3 +1008,5 @@
 | 2026-10-13 02:02:00 | 컴투스프로야구, KBO 포스트시즌 맞아 신규 캠페인 영상 공개 | ![Image](images/1791864639546_컴투스프로야구__KBO_포스트시즌_맞_image.jpg) |
 | 2026-10-14 02:22:00 | [공식발표] '와' 탈KBO급 이 선수 대체 어떻게 데려왔나…'완봉승+완투승... | ![Image](images/1791944615666__공식발표___와__탈KBO급_이_선_image.jpg) |
 | 2026-10-14 01:36:00 | 최원준ㆍ힐리어드ㆍ아빌라, KBO 9~10월 MVP 후보⋯19일까지 팬 투표 | ![Image](images/1791944617847_최원준_힐리어드_아빌라__KBO_9__image.png) |
+| 2026-10-15 02:02:00 | [2026 PS]영웅 오스틴의 섬뜩한 경고…결승 홈런 뒤 3연속 삼진, 158km 강... | ![Image](images/1792029883213__2026_PS_영웅_오스틴의_섬뜩한_image.webp) |
+| 2026-10-14 13:54:00 | Dean delivers big blow for Twins in KBO postseason win on birthday | ![Image](images/1792029884009_Dean_delivers_big_bl_image.jpg) |
