@@ -1012,3 +1012,5 @@
 | 2026-10-14 13:54:00 | Dean delivers big blow for Twins in KBO postseason win on birthday | ![Image](images/1792029884009_Dean_delivers_big_bl_image.jpg) |
 | 2026-10-16 01:53:00 | 롯데 재계약 불발→美 복귀, KBO 역수출 신화 썼다! 美 언론 호평 &quot;감보... | ![Image](images/1792115783795_롯데_재계약_불발___복귀__KBO__image.jpg) |
 | 2026-10-16 01:03:00 | Tigers, Twins set to renew KBO postseason rivalry | ![Image](images/1792115786663_Tigers__Twins_set_to_image.jpg) |
+| 2026-10-17 01:46:00 | 포지션별 영광의 얼굴은?…2026 KBO 골든글러브 후보 발표 | ![Image](images/1792201779404_포지션별_영광의_얼굴은__2026_K_image.jpg) |
+| 2026-10-16 06:07:00 | 2026 KBO 수비상 10개 부문 후보 발표…유틸리티 신설 | ![Image](images/1792201781761_2026_KBO_수비상_10개_부문__image.jpg) |
