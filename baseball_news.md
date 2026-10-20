@@ -1017,3 +1017,4 @@
 | 2026-10-18 01:44:00 | 비 1mm 예보 있는 광주, 일단 KIA는 훈련 시작…2차전 정상 진행 가능할... | ![Image](images/1792288074316_비_1mm_예보_있는_광주__일단_K_image.jpg) |
 | 2026-10-17 21:01:00 | Rookie embracing cleanup role in 1st KBO postseason | ![Image](images/1792288077257_Rookie_embracing_cle_image.jpg) |
 | 2026-10-19 00:58:00 | Foreign-born starters to duel in KBO postseason elimination game | ![Image](images/1792375499010_Foreign_born_starter_image.jpg) |
+| 2026-10-19 08:23:00 | KBO, APBC 대표팀 사령탑에 최원호 감독 선임…내달 2일 합숙 훈련 돌입 | ![Image](images/1792462863293_KBO__APBC_대표팀_사령탑에_최_image.jpg) |
