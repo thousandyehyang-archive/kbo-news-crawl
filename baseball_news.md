@@ -1018,3 +1018,5 @@
 | 2026-10-17 21:01:00 | Rookie embracing cleanup role in 1st KBO postseason | ![Image](images/1792288077257_Rookie_embracing_cle_image.jpg) |
 | 2026-10-19 00:58:00 | Foreign-born starters to duel in KBO postseason elimination game | ![Image](images/1792375499010_Foreign_born_starter_image.jpg) |
 | 2026-10-19 08:23:00 | KBO, APBC 대표팀 사령탑에 최원호 감독 선임…내달 2일 합숙 훈련 돌입 | ![Image](images/1792462863293_KBO__APBC_대표팀_사령탑에_최_image.jpg) |
+| 2026-10-21 02:08:00 | KIA-삼성 달빛 PO '최형우 시리즈' 돼버렸다...&quot;적이다. 이겨야 한다&quot; | ![Image](images/1792548878760_KIA_삼성_달빛_PO__최형우_시리_image.jpg) |
+| 2026-10-20 13:58:00 | Ugly loss by KBO champions closes book on iconic stadium | ![Image](images/1792548881307_Ugly_loss_by_KBO_cha_image.jpg) |
