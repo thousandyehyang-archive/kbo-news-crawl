@@ -1013,3 +1013,5 @@ https://n.news.naver.com/mnews/article/001/0016384751
 https://m.sports.naver.com/kbaseball/article/382/0001299847
 https://m.sports.naver.com/kbaseball/article/076/0004458076
 https://n.news.naver.com/mnews/article/001/0016390040
+https://www.newsq.co.kr/news/articleView.html
+https://m.sports.naver.com/kbaseball/article/021/0002826950

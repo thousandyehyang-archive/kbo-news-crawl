@@ -1020,3 +1020,5 @@
 | 2026-10-19 08:23:00 | KBO, APBC 대표팀 사령탑에 최원호 감독 선임…내달 2일 합숙 훈련 돌입 | ![Image](images/1792462863293_KBO__APBC_대표팀_사령탑에_최_image.jpg) |
 | 2026-10-21 02:08:00 | KIA-삼성 달빛 PO '최형우 시리즈' 돼버렸다...&quot;적이다. 이겨야 한다&quot; | ![Image](images/1792548878760_KIA_삼성_달빛_PO__최형우_시리_image.jpg) |
 | 2026-10-20 13:58:00 | Ugly loss by KBO champions closes book on iconic stadium | ![Image](images/1792548881307_Ugly_loss_by_KBO_cha_image.jpg) |
+| 2026-10-22 02:08:00 | '삼성 천적' KIA 나성범, 가을에도 통할까 [프로야구] | ![Image](images/1792634948996__삼성_천적__KIA_나성범__가을에_image.jpg) |
+| 2026-10-22 01:57:00 | [단독]허구연 3연임 가도에 새 변수 등장…이종훈 전 협회장 KBO 후보 추... |  |
