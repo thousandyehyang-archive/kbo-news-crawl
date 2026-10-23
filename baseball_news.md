@@ -1022,3 +1022,5 @@
 | 2026-10-20 13:58:00 | Ugly loss by KBO champions closes book on iconic stadium | ![Image](images/1792548881307_Ugly_loss_by_KBO_cha_image.jpg) |
 | 2026-10-22 02:08:00 | '삼성 천적' KIA 나성범, 가을에도 통할까 [프로야구] | ![Image](images/1792634948996__삼성_천적__KIA_나성범__가을에_image.jpg) |
 | 2026-10-22 01:57:00 | [단독]허구연 3연임 가도에 새 변수 등장…이종훈 전 협회장 KBO 후보 추... |  |
+| 2026-10-23 02:13:00 | 이 정도일 줄은 몰랐다…“치우는 데만 45억” 사람 몰리자 쓰레기 폭탄... | ![Image](images/1792721676175_이_정도일_줄은_몰랐다__치우는_데만_image.jpg) |
+| 2026-10-22 22:00:00 | Old KBO rivals to duel for ticket to championship series | ![Image](images/1792721677795_Old_KBO_rivals_to_du_image.jpg) |
