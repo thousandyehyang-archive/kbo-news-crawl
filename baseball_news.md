@@ -1029,3 +1029,5 @@
 | 2026-10-25 01:57:00 | [MD포토] 대형 방수포 펼쳐진 대구삼성라이온즈파크 | ![Image](images/1792893573133__MD포토__대형_방수포_펼쳐진_대구_image.jpg) |
 | 2026-10-24 06:31:00 | 이종훈 전 야구협회장, KBO에 총재 불출마 의사 전달 | ![Image](images/1792893575529_이종훈_전_야구협회장__KBO에_총재_image.jpg) |
 | 2026-10-26 00:34:00 | Tigers catcher hoping to recapture KBO postseason glory of 2024 | ![Image](images/1792980057284_Tigers_catcher_hopin_image.jpg) |
+| 2026-10-27 02:37:00 | &quot;졌을 때 억울해하고 분해했으면&quot;.. 이택근 단장이 롯데 팬들에게 건넨... | ![Image](images/1793068708525__quot_졌을_때_억울해하고_분해했_image.jpg) |
+| 2026-10-26 13:22:00 | (LEAD) Tigers defeat Lions in KBO postseason series opener | ![Image](images/1793068710204__LEAD__Tigers_defeat_image.jpg) |
