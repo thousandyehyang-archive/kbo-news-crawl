@@ -1031,3 +1031,5 @@
 | 2026-10-26 00:34:00 | Tigers catcher hoping to recapture KBO postseason glory of 2024 | ![Image](images/1792980057284_Tigers_catcher_hopin_image.jpg) |
 | 2026-10-27 02:37:00 | &quot;졌을 때 억울해하고 분해했으면&quot;.. 이택근 단장이 롯데 팬들에게 건넨... | ![Image](images/1793068708525__quot_졌을_때_억울해하고_분해했_image.jpg) |
 | 2026-10-26 13:22:00 | (LEAD) Tigers defeat Lions in KBO postseason series opener | ![Image](images/1793068710204__LEAD__Tigers_defeat_image.jpg) |
+| 2026-10-28 02:46:00 | &quot;동네야구도 아니고 말이 안 된다&quot;…임창용, KIA 이의리 연투에 작심 비... | ![Image](images/1793155619733__quot_동네야구도_아니고_말이_안_image.jpg) |
+| 2026-10-27 05:31:00 | 허구연 KBO총재, 3연임 눈앞…이사회서 단독 후보 추천 | ![Image](images/1793155622390_허구연_KBO총재__3연임_눈앞_이사_image.jpg) |
