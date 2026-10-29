@@ -1033,3 +1033,5 @@
 | 2026-10-26 13:22:00 | (LEAD) Tigers defeat Lions in KBO postseason series opener | ![Image](images/1793068710204__LEAD__Tigers_defeat_image.jpg) |
 | 2026-10-28 02:46:00 | &quot;동네야구도 아니고 말이 안 된다&quot;…임창용, KIA 이의리 연투에 작심 비... | ![Image](images/1793155619733__quot_동네야구도_아니고_말이_안_image.jpg) |
 | 2026-10-27 05:31:00 | 허구연 KBO총재, 3연임 눈앞…이사회서 단독 후보 추천 | ![Image](images/1793155622390_허구연_KBO총재__3연임_눈앞_이사_image.jpg) |
+| 2026-10-29 03:02:00 | &quot;한화 떠나게 되었습니다&quot; 한화 일본인 코치는 더 이상 없다…한화 포수... | ![Image](images/1793243295333__quot_한화_떠나게_되었습니다_q_image.jpg) |
+| 2026-10-27 07:18:00 | 허구연 KBO총재, 3연임 눈앞…이사회서 단독 후보 추천(종합) | ![Image](images/1793243297683_허구연_KBO총재__3연임_눈앞_이사_image.jpg) |
