@@ -1036,3 +1036,5 @@
 | 2026-10-29 03:02:00 | &quot;한화 떠나게 되었습니다&quot; 한화 일본인 코치는 더 이상 없다…한화 포수... | ![Image](images/1793243295333__quot_한화_떠나게_되었습니다_q_image.jpg) |
 | 2026-10-27 07:18:00 | 허구연 KBO총재, 3연임 눈앞…이사회서 단독 후보 추천(종합) | ![Image](images/1793243297683_허구연_KBO총재__3연임_눈앞_이사_image.jpg) |
 | 2026-10-29 14:24:00 | Lions manager gives kudos to bullpen after narrow KBO postseason win | ![Image](images/1793329933910_Lions_manager_gives__image.jpg) |
+| 2026-10-31 02:56:00 | [사진]이재희,'막아야해' | ![Image](images/1793415444052__사진_이재희__막아야해__image.jpg) |
+| 2026-10-31 00:47:00 | 프로야구 NC, 김강민 외야 코디네이터 영입…KBO리그 최초 | ![Image](images/1793415447657_프로야구_NC__김강민_외야_코디네이_image.jpg) |
