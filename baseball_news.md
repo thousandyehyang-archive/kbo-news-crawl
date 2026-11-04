@@ -1044,3 +1044,4 @@
 | 2026-11-02 01:28:00 | KBO, 2026 APBC 대한민국 응원단 파견…전 경기 내야 응원석 운영 | ![Image](images/1793588330923_KBO__2026_APBC_대한민국__image.jpg) |
 | 2026-11-03 04:14:00 | '96 이강철 vs 06 박진만' 한국시리즈 MVP들이 펼칠 지략 대결 | ![Image](images/1793679461268__96_이강철_vs_06_박진만__한_image.jpg) |
 | 2026-11-02 05:24:00 | KBO 한국시리즈 미디어데이 | ![Image](images/1793679463591_KBO_한국시리즈_미디어데이_image.jpg) |
+| 2026-11-03 13:16:00 | Wiz starter Daniel impresses in KBO postseason debut | ![Image](images/1793763358832_Wiz_starter_Daniel_i_image.jpg) |
