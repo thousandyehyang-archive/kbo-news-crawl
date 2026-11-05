@@ -1045,3 +1045,5 @@
 | 2026-11-03 04:14:00 | '96 이강철 vs 06 박진만' 한국시리즈 MVP들이 펼칠 지략 대결 | ![Image](images/1793679461268__96_이강철_vs_06_박진만__한_image.jpg) |
 | 2026-11-02 05:24:00 | KBO 한국시리즈 미디어데이 | ![Image](images/1793679463591_KBO_한국시리즈_미디어데이_image.jpg) |
 | 2026-11-03 13:16:00 | Wiz starter Daniel impresses in KBO postseason debut | ![Image](images/1793763358832_Wiz_starter_Daniel_i_image.jpg) |
+| 2026-11-05 03:53:00 | '307억 잘 포기했네' 美 관심 폭발, PHI도 노시환 노린다 &quot;최고의 우타자... | ![Image](images/1793850965776__307억_잘_포기했네____관심_폭_image.jpg) |
+| 2026-11-05 03:51:00 | ‘이정후 동료’에서 KBO로, LG 트리스탄 벡 영입 | ![Image](images/1793850968271__이정후_동료_에서_KBO로__LG__image.webp) |
