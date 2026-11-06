@@ -1047,3 +1047,5 @@
 | 2026-11-03 13:16:00 | Wiz starter Daniel impresses in KBO postseason debut | ![Image](images/1793763358832_Wiz_starter_Daniel_i_image.jpg) |
 | 2026-11-05 03:53:00 | '307억 잘 포기했네' 美 관심 폭발, PHI도 노시환 노린다 &quot;최고의 우타자... | ![Image](images/1793850965776__307억_잘_포기했네____관심_폭_image.jpg) |
 | 2026-11-05 03:51:00 | ‘이정후 동료’에서 KBO로, LG 트리스탄 벡 영입 | ![Image](images/1793850968271__이정후_동료_에서_KBO로__LG__image.webp) |
+| 2026-11-06 03:47:00 | 천소윤 치어리더 ‘응원하는 모습도 상큼’[엑's HD포토] | ![Image](images/1793937242400_천소윤_치어리더__응원하는_모습도_상_image.jpg) |
+| 2026-11-05 07:20:00 | CJ ENM 영업익 26% 오른 221억원 &quot;티빙, KBO 중계권 연내 체결&quot; [컨콜 종합... | ![Image](images/1793937245354_CJ_ENM_영업익_26__오른_22_image.jpg) |
