@@ -1045,3 +1045,5 @@ https://news.mtn.co.kr/article/2026110514591624156
 https://m.sports.naver.com/kbaseball/article/001/0016427783
 https://m.sports.naver.com/kbaseball/article/108/0003485676
 https://n.news.naver.com/mnews/article/001/0016428252
+https://m.sports.naver.com/kbaseball/article/477/0000638205
+https://n.news.naver.com/mnews/article/003/0014310277
