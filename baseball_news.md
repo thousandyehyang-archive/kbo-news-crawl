@@ -1054,3 +1054,4 @@
 | 2026-11-07 08:38:00 | (LEAD) Lions beat Wiz to reach brink of Korean Series title | ![Image](images/1794106635784__LEAD__Lions_beat_Wi_image.jpg) |
 | 2026-11-09 03:17:00 | [포토S] 삼성, '감격스러운 우승!' | ![Image](images/1794194281278__포토S__삼성___감격스러운_우승__image.jpg) |
 | 2026-11-09 02:00:00 | 보은서 KBO 야구 유망주 캠프…고교 선수 등 50명 참가 | ![Image](images/1794194283400_보은서_KBO_야구_유망주_캠프_고교_image.jpg) |
+| 2026-11-11 03:24:00 | ‘3년 전 연장 승리’ APBC 첫 상대 호주, WBC 경력자-마이너리거 포진…... | ![Image](images/1794367604682__3년_전_연장_승리__APBC_첫__image.jpg) |
